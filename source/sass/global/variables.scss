@@ -1,0 +1,65 @@
+$width-phone: 320px;
+$width-tablet: 768px;
+$width-desktop: 1440px;
+
+$padding-phone: 15px;
+$padding-tablet: 45px;
+$padding-desktop: 103px;
+
+// $divider: #74819c;
+// $play-btn: #ed0233;
+// $light: rgba(16, 38, 84, 0.5);
+// $accent-bg: #ed0233;
+// $btn-border: #1c3374;
+// $tab-border: rgba(16, 38, 84, 0.2);
+// $primary-bg: #f8f9fc;
+// $price: #103aae;
+// $price-shadow: #e8e8e8;
+// $desc: #2e35ac;
+// $secondary: #1c3374;
+// $dark: #030a1a;
+
+$base-light: #FFFFFF;
+$base-dark: #102654;
+$base-accent: #103AAE;
+$alt-light: #F8F9FC;
+$alt-dark: #1C3374;
+$alt-accent: #D10A42;
+
+
+:root {
+  // Font familie
+  --ff-primary: "Roboto Condensed", "Arial", sans-serif;
+  --ff-second: "Alumni Sans", "Arial", sans-serif;
+
+  // Text color
+  --txt-base-dark: #{$base-dark};
+  --txt-base-light: #{$base-light};
+  --txt-accent: #{$base-accent};
+  --txt-alt-gradient: linear-gradient(129deg, $alt-accent 0%, #0041CA 100%);
+
+  // Button color
+  --btn-light: #{$base-light};
+  --btn-dark: #{$base-dark};
+  --btn-alt-dark: #{$alt-dark};
+  --btn-alt-accent: #{$alt-accent};
+  --btn-gradient: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+
+  // Background color
+  --bg-base-light: #{$base-light};
+  --bg-base-dark: #{$base-dark};
+  --bg-alt-light: #{$alt-light};
+  --bg-alt-dark: #{$alt-dark};
+  --bg-banner: #ED0233;
+  --bg-footer: #030A1A;
+  --bg-gradient: #003D85-#B80027; // TODO: уточнить!
+
+  // Icon color
+  --ic-light: #{$base-light};
+  --ic-dark: #{$base-dark};
+
+  // Form color
+  --fc-light: #{$base-light};
+  --fc-err: #{$base-dark};
+}
+

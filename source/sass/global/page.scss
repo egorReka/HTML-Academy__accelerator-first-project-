@@ -1,0 +1,18 @@
+.page {
+  display: grid;
+  min-block-size: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  display: grid;
+  min-block-size: 100%;
+  grid-template-rows: 1fr auto;
+  font-family: var(--ff-primary);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--txt-base-dark);
+  background-color: var(--bg-base-light);
+}

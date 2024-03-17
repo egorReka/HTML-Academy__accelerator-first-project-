@@ -1,0 +1,14 @@
+@use "../bootstrap.scss" as *;
+
+.container {
+  width: $width-phone - ($padding-phone * 2);
+  margin: 0 auto;
+
+  @include media-tablet {
+    width: $width-tablet - ($padding-tablet * 2);
+  }
+
+  @include media-desktop {
+    width: $width-desktop - ($padding-desktop * 2);
+  }
+}
