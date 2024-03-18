@@ -10,6 +10,8 @@
 @import "./global/container.scss";
 
 /* BLOCKS */
+@import "./blocks/main.scss";
 @import "./blocks/title.scss";
 @import "./blocks/hero.scss";
-
+@import "./blocks/about/about.scss";
+@import "./blocks/about/video.scss";

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
 <head>
   <meta charset="UTF-8">
@@ -10,18 +10,114 @@
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
-<body class="page-body">
-  <div data-test="hero">hero</div>
-  <div data-test="about">about</div>
-  <div data-test="price">price</div>
-  <div data-test="games">games</div>
-  <div data-test="juri">juri</div>
-  <div data-test="features">features</div>
-  <div data-test="offers">offers</div>
-  <div data-test="faq">faq</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+<body class="page__body">
+  <main class="main">
+
+    <section class="hero" data-test="hero">
+      <div class="hero__container container">
+
+        <header class="hero__header">
+          <img class="hero__header-logo" src="img/logo.svg" width="100" height="20" alt="SUPERGYM.">
+          <a class="hero__header-tel" href="tel:+78005555555">8 800 555-55-55</a>
+        </header>
+
+        <div class="hero__wrapper">
+          <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <div class="hero__title-wrapper">
+            <span class="hero__subtitle title">Омск</span>
+            <h1 class="hero__title title title--big">Фитнес центр</h1>
+          </div>
+          <a class="hero__link" href="#price">Купить абонемент</a>
+        </div>
+
+        <div class="hero__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/hero/hero-img-desktop@1x.webp, img/hero/hero-img-desktop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/hero/hero-img-tablet@1x.webp, img/hero/hero-img-tablet@2x.webp 2x" width="324" height="390">
+            <source type="image/jpg" media="(min-width: 1440px)"
+              srcset="img/hero/hero-img-desktop@1x.jpg, img/hero/hero-img-desktop@2x.jpg 2x" width="500" height="524">
+            <img class="hero__img" src="img/hero/hero-img-tablet@1x.jpg" srcset="img/hero/hero-img-tablet@2x.jpg 2x"
+              width="324" height="390" alt="Тренер супермен.">
+          </picture>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="main__about about" data-test="about">
+
+      <div class="about__container container">
+        <div class="about__title-wrapper">
+          <h2 class="about__title title">Тренажёрный зал</h2>
+          <p class="about__description">Просторный зал площадью 900 кв/м</p>
+        </div>
+        <div class="about__text-wrapper">
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажёрный
+            зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть
+            несколько
+            оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+      </div>
+
+      <div class="about__media-wrapper">
+        <div class="about__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/about/about-desktop@1x.webp, img/about/about-desktop@2x.webp 2x" width="660" height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/about/about-tablet@1x.webp, img/about/about-tablet@2x.webp 2x" width="678" height="345">
+            <source srcset="img/about/about-mobile@1x.webp 1x, img/about/about-mobile@2x.webp 2x" type="image/webp"
+              width="320" height="280">
+            <source type="image/jpg" media="(min-width: 1440px)"
+              srcset="img/about/about-desktop@1x.jpg, img/about/about-desktop@2x.jpg 2x" width="660" height="400">
+            <source type="image/jpg" media="(min-width: 768px)"
+              srcset="img/about/about-tablet@1x.jpg, img/about/about-tablet@2x.jpg 2x" width="678" height="345">
+            <img class="about__img" src="img/about/about-mobile@1x.jpg" srcset="img/about/about-mobile@2x.jpg 2x"
+              width="320" height="280" alt="Оборудованный тренажёрный зал.">
+          </picture>
+        </div>
+
+        <div class="about__video video">
+          <a class="video__link" href="https://youtu.be/9TZXsZItgdw">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/about/video-desktop@1x.webp 1x, img/about/video-desktop@2x.webp 2x" width="360"
+                height="230">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/about/video-tablet@1x.webp 1x, img/about/video-tablet@2x.webp 2x" width="270" height="170">
+              <source srcset="img/about/video-mobile@1x.webp 1x, img/about/video-mobile@2x.webp 2x" type="image/webp"
+                width="320" height="170">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="img/about/video-desktop@1x.jpg 1x, img/about/video-desktop@2x.jpg 2x" width="360" height="230">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="img/about/video-tablet@1x.jpg 1x, img/about/video-tablet@2x.jpg 2x" width="270" height="170">
+              <img class="video__media" src="img/about/video-mobile@1x.jpg" srcset="img/about/video-mobile@2x.jpg 2x"
+                width="320" height="170" alt="Обзор тренажёрного зала.">
+            </picture>
+          </a>
+          <button class="video__button" type="button" aria-label="Запустить видео."></button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="price" id="price" data-test="price">Абонементы</section>
+    <aside class="games" data-test="games">games</aside>
+    <section class="juri" data-test="juri">juri</section>
+    <section class="features" data-test="features">features</section>
+    <section class="offers" data-test="offers">offers</section>
+    <section class="faq" data-test="faq">faq</section>
+    <section class="reviews" data-test="reviews">reviews</section>
+    <section class="form" data-test="form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque
+      voluptatem nisi eos ducimus non dolorum quae autem aliquam quis enim facere harum, aperiam obcaecati at ab magni
+      dolore tempora!</section>
+  </main>
+
+  <footer data-test="footer">footer</footer>
 
   <script type="module" src="js/main.js"></script>
 </body>
@@ -34,4 +130,3 @@
 <svg>
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
-<!-- примеры требуемых атрибутов data-test="*" -->

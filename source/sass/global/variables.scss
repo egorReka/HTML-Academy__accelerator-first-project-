@@ -12,6 +12,7 @@ $padding-desktop: 103px;
 // $accent-bg: #ed0233;
 // $btn-border: #1c3374;
 // $tab-border: rgba(16, 38, 84, 0.2);
+//
 // $primary-bg: #f8f9fc;
 // $price: #103aae;
 // $price-shadow: #e8e8e8;
@@ -24,7 +25,8 @@ $base-dark: #102654;
 $base-accent: #103AAE;
 $alt-light: #F8F9FC;
 $alt-dark: #1C3374;
-$alt-accent: #D10A42;
+$alt-accent-primary: #D10A42;
+$alt-accent-second:#ED0233;
 
 
 :root {
@@ -36,14 +38,15 @@ $alt-accent: #D10A42;
   --txt-base-dark: #{$base-dark};
   --txt-base-light: #{$base-light};
   --txt-accent: #{$base-accent};
-  --txt-alt-gradient: linear-gradient(129deg, $alt-accent 0%, #0041CA 100%);
+  --txt-alt-gradient: linear-gradient(129deg, $alt-accent-primary 0%, #0041CA 100%);
 
   // Button color
   --btn-light: #{$base-light};
   --btn-dark: #{$base-dark};
   --btn-alt-dark: #{$alt-dark};
-  --btn-alt-accent: #{$alt-accent};
+  --btn-alt-accent: #{$alt-accent-primary};
   --btn-gradient: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  --btn-border: #{transparentize($alt-accent-second, 0.8)};
 
   // Background color
   --bg-base-light: #{$base-light};
@@ -53,6 +56,7 @@ $alt-accent: #D10A42;
   --bg-banner: #ED0233;
   --bg-footer: #030A1A;
   --bg-gradient: #003D85-#B80027; // TODO: уточнить!
+  --bg-black: #000000;
 
   // Icon color
   --ic-light: #{$base-light};
