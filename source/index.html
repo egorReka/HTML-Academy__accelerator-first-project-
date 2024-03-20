@@ -138,7 +138,7 @@
                   <span class="visually-hidden">Рублей.</span>
                 </dd>
               </dl>
-              <a class="product-card__link button" href="/">Купить абонемент</a>
+              <a class="product-card__link button button--secondary" href="/">Купить абонемент</a>
             </div>
           </li>
 
@@ -153,7 +153,7 @@
                   <span class="visually-hidden">Рублей.</span>
                 </dd>
               </dl>
-              <a class="product-card__link button" href="/">Купить абонемент</a>
+              <a class="product-card__link button button--secondary" href="/">Купить абонемент</a>
             </div>
           </li>
 
@@ -168,7 +168,7 @@
                   <span class="visually-hidden">Рублей.</span>
                 </dd>
               </dl>
-              <a class="product-card__link button" href="/">Купить абонемент</a>
+              <a class="product-card__link button button--secondary" href="/">Купить абонемент</a>
             </div>
           </li>
         </ul>
@@ -176,9 +176,49 @@
       </div>
     </section>
 
+    <aside class="games" data-test="games">
+      <div class="games__container container">
+        <div class="games__wrapper">
+          <h2 class="games__title title title--medium" lang="en">SUPER GAMES</h2>
+          <time class="games__datetime games-datetime" datetime="2019-03-07T12:00">
+            <span>
+              <span class="games-datetime__title">Дата</span>
+              <span class="games-datetime__text">
+                <span class="games-datetime__day">7</span>
+                <span class="games-datetime__month">Марта</span>
+                <span class="games-datetime__year">2019</span>
+              </span>
+            </span>
+            <span>
+              <span class="games-datetime__title">Время</span>
+              <span class="games-datetime__time">12:00</span>
+            </span>
+          </time>
+          <p class="games__text">Ежегодные соревнования по CrossFit</p>
+          <a class="games__link button button--primary" href="/">заполнить заявку</a>
+        </div>
+        <div class="games__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/games/games-desktop@1x.webp, img/games/games-desktop@2x.webp 2x" width="660" height="500">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/games/games-tablet@1x.webp, img/games/games-tablet@2x.webp 2x" width="378" height="348">
+            <source srcset="img/games/games-mobile@1x.webp 1x, img/games/games-mobile@2x.webp 2x" type="image/webp"
+              width="290" height="290">
+            <source type="image/jpg" media="(min-width: 1440px)"
+              srcset="img/games/games-desktop@1x.jpg, img/games/games-desktop@2x.jpg 2x" width="660" height="500">
+            <source type="image/jpg" media="(min-width: 768px)"
+              srcset="img/games/games-tablet@1x.jpg, img/games/games-tablet@2x.jpg 2x" width="378" height="348">
+            <img class="games__img" src="img/games/games-mobile@1x.jpg" srcset="img/about/games-mobile@2x.jpg 2x"
+              width="290" height="290" alt="Спортсмен на соревнованиях по CrossFit.">
+          </picture>
+          </picture>
+        </div>
+      </div>
+    </aside>
 
-    <!-- <aside class="games" data-test="games">games</aside>
-    <section class="juri" data-test="juri">juri</section>
+
+    <!--     <section class="juri" data-test="juri">juri</section>
     <section class="features" data-test="features">features</section>
     <section class="offers" data-test="offers">offers</section>
     <section class="faq" data-test="faq">faq</section>

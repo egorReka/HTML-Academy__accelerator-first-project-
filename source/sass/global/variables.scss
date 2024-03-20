@@ -29,6 +29,7 @@ $alt-dark: #1C3374;
 $alt-accent-primary: #D10A42;
 $alt-accent-second:#ED0233;
 $line-light: #787878;
+$second-dark: #000143;
 
 :root {
   // Font familie
@@ -56,6 +57,7 @@ $line-light: #787878;
   --btn-gradient: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
   --btn-opacity-gradient: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
   --btn-border: #{transparentize($alt-accent-second, 0.8)};
+  --btn-bg-transparent: rgba(255, 255, 255, 0.8);
   --btn-alt-border: #{$base-black};
 
   // Background color
@@ -63,7 +65,8 @@ $line-light: #787878;
   --bg-base-dark: #{$base-dark};
   --bg-alt-light: #{$alt-light};
   --bg-alt-dark: #{$alt-dark};
-  --bg-banner: #ED0233;
+  --bg-primary-banner: #{$alt-accent-second};
+  --bg-second-banner: #{$second-dark};
   --bg-footer: #030A1A;
   --bg-gradient: #003D85-#B80027; // TODO: уточнить!
   --bg-black: #000000;

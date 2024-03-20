@@ -3,36 +3,72 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
+  text-align: center;
   text-transform: uppercase;
-  box-shadow: inset 0 0 0 2px var(--txt-base-dark);
-  color: var(--txt-base-dark);
+  user-select: none;
 
-
-  &:hover {
-    background-image: var(--btn-gradient);
-    box-shadow: inset 0 0 0 2px transparent;
+  &--primary {
+    box-shadow: inset 0 0 0 2px var(--txt-base-light);
     color: var(--txt-base-light);
+
+    &:hover {
+      background-color: var(--bg-base-light);
+      box-shadow: inset 0 0 0 2px transparent;
+      color: var(--txt-accent);
+    }
+
+    &:focus {
+      background-color: var(--btn-bg-transparent);
+      box-shadow: inset 0 0 0 2px var(--btn-alt-border);
+      outline: none;
+    }
+
+    &:active {
+      background-color: var(--bg-base-light);
+      box-shadow: inset 0 0 0 2px transparent;
+      color: var(--txt-base-dark);
+      opacity: 1;
+    }
+
+    &:disabled,
+    &:not([href]) {
+      background-color: transparent;
+      color: var(--txt-base-light);
+      box-shadow: inset 0 0 0 2px var(--txt-base-light);
+      opacity: 0.5;
+    }
   }
 
-  &:focus {
-    background-image: var(--btn-opacity-gradient);
-    box-shadow: inset 0 0 0 2px var(--btn-alt-border);
-    color: var(--txt-base-light);
-    outline: none;
-  }
-
-  &:active {
-    background-image: var(--btn-gradient);
-    box-shadow: inset 0 0 0 2px transparent;
-    color: var(--txt-base-opacity);
-    opacity: 1;
-  }
-
-  &:disabled,
-  &:not([href]) {
-    background-image: none;
-    color: var(--txt-base-dark);
+  &--secondary {
     box-shadow: inset 0 0 0 2px var(--txt-base-dark);
-    opacity: 0.3;
+    color: var(--txt-base-dark);
+
+    &:hover {
+      background-image: var(--btn-gradient);
+      box-shadow: inset 0 0 0 2px transparent;
+      color: var(--txt-base-light);
+    }
+
+    &:focus {
+      background-image: var(--btn-opacity-gradient);
+      box-shadow: inset 0 0 0 2px var(--btn-alt-border);
+      color: var(--txt-base-light);
+      outline: none;
+    }
+
+    &:active {
+      background-image: var(--btn-gradient);
+      box-shadow: inset 0 0 0 2px transparent;
+      color: var(--txt-base-opacity);
+      opacity: 1;
+    }
+
+    &:disabled,
+    &:not([href]) {
+      background-image: none;
+      color: var(--txt-base-dark);
+      box-shadow: inset 0 0 0 2px var(--txt-base-dark);
+      opacity: 0.3;
+    }
   }
 }
