@@ -1,0 +1,38 @@
+.button {
+  padding: 27px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 2px var(--txt-base-dark);
+  color: var(--txt-base-dark);
+
+
+  &:hover {
+    background-image: var(--btn-gradient);
+    box-shadow: inset 0 0 0 2px transparent;
+    color: var(--txt-base-light);
+  }
+
+  &:focus {
+    background-image: var(--btn-opacity-gradient);
+    box-shadow: inset 0 0 0 2px var(--btn-alt-border);
+    color: var(--txt-base-light);
+    outline: none;
+  }
+
+  &:active {
+    background-image: var(--btn-gradient);
+    box-shadow: inset 0 0 0 2px transparent;
+    color: var(--txt-base-opacity);
+    opacity: 1;
+  }
+
+  &:disabled,
+  &:not([href]) {
+    background-image: none;
+    color: var(--txt-base-dark);
+    box-shadow: inset 0 0 0 2px var(--txt-base-dark);
+    opacity: 0.3;
+  }
+}

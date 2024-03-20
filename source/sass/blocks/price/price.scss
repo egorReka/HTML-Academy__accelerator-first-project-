@@ -1,0 +1,66 @@
+.price {
+  background-color: var(--bg-alt-light);
+
+  @include media-tablet {
+    display: grid;
+    grid-template-rows: 105px auto;
+
+    &::after {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 1;
+      align-self: flex-end;
+      justify-self: flex-end;
+      display: block;
+      width: 275px;
+      height: 328px;
+      background-image: url("../../../img/price/plates@1x.png");
+      background-image:
+        image-set(
+          url("../../../img/price/plates@2x.webp") type("image/webp") 2x,
+          url("../../../img/price/plates@1x.webp") type("image/webp") 1x,
+          url("../../../img/price/plates@2x.png") 2x,
+          url("../../../img/price/plates@1x.png") 1x
+        );
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      content: '';
+    }
+  }
+}
+
+.price__container {
+  display: grid;
+  row-gap: 30px;
+  padding: 40px 0;
+
+  @include media-tablet {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 1;
+  }
+}
+
+.price__title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.price__list {
+  @include reset-list;
+  max-width: 310px;
+  margin: 0 auto;
+
+  @include media-desktop {
+    max-width: 350px;
+  }
+}
+
+.price__item {
+  display: grid;
+}
+
+.price__products-list {
+  @include reset-list;
+  position: relative;
+}

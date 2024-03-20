@@ -1,0 +1,48 @@
+.select-months {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--txt-base-line);
+}
+
+.select-months__radio {
+  appearance: none;
+}
+
+.select-months__name {
+  display: block;
+  padding: 10px 0 17px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--txt-alt-light);
+  cursor: pointer;
+  user-select: none
+}
+
+.select-months__radio:hover + .select-months__name {
+  color: var(--txt-alt-dark);
+}
+
+.select-months__radio:checked + .select-months__name {
+  color: var(--txt-base-dark);
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 14px;
+  text-decoration-color: var(--txt-accent-line);
+}
+
+.select-months__radio:focus + .select-months__name {
+  text-decoration-color: var(--txt-base-dark);
+}
+
+.select-months__radio:active + .select-months__name {
+  text-decoration-color: var(--txt-accent-line);
+}
+
+.select-months__radio:disabled + .select-months__name {
+  color: var(--txt-transparent-dark-07);
+  text-decoration-color: var(--txt-transparent-dark-07);
+  cursor: default;
+}
