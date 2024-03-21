@@ -20,6 +20,7 @@ $padding-desktop: 103px;
 // $secondary: #1c3374;
 // $dark: #030a1a;
 
+
 $base-black: #000000;
 $base-light: #FFFFFF;
 $base-dark: #102654;
@@ -30,6 +31,8 @@ $alt-accent-primary: #D10A42;
 $alt-accent-second:#ED0233;
 $line-light: #787878;
 $second-dark: #000143;
+$bg-light: #E8E8E8;
+
 
 :root {
   // Font familie
@@ -47,6 +50,7 @@ $second-dark: #000143;
   --txt-accent-line: #{$alt-accent-primary};
   --txt-base-line: #{transparentize($line-light, 0.8)};
   --txt-shadow: #e8e8e8;
+  --txt-alt-card: #b6bdcc;
   --txt-base-opacity: #{transparentize($base-light, 0.7)};
 
   // Button color
@@ -59,6 +63,7 @@ $second-dark: #000143;
   --btn-border: #{transparentize($alt-accent-second, 0.8)};
   --btn-bg-transparent: rgba(255, 255, 255, 0.8);
   --btn-alt-border: #{$base-black};
+  --btn-shadow-bg: #{$bg-light};
 
   // Background color
   --bg-base-light: #{$base-light};

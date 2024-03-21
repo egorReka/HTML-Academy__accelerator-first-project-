@@ -1,5 +1,5 @@
 /* VENDOR */
-@import "vendor/normalize";
+@import "./vendor/normalize.scss";
 
 /* GLOBAL */
 @import "./bootstrap.scss";
@@ -22,3 +22,5 @@
 @import "./blocks/price/products-card.scss";
 @import "./blocks/games/games.scss";
 @import "./blocks/games/games-datetime.scss";
+@import "./blocks/juri/juri.scss";
+@import "./blocks/juri/juri-card.scss";
