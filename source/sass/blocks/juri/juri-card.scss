@@ -1,6 +1,7 @@
 .juri-card {
   position: relative;
   color: var(--txt-base-light);
+  outline: none;
 
   &::after {
     position: absolute;
@@ -15,7 +16,8 @@
     content: "";
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     transform: translateY(0%);
   }
 }
@@ -44,7 +46,8 @@
   transition: 0.3s transform linear;
 }
 
-.juri-card:hover .juri-card__container {
+.juri-card:hover .juri-card__container,
+.juri-card:focus .juri-card__container {
   transform: translateY(0%);
   transition: 0.5s transform linear;
 }
@@ -63,7 +66,8 @@
   transition: 0.3s transform linear;
 }
 
-.juri-card:hover .juri-card__wrapper {
+.juri-card:hover .juri-card__wrapper,
+.juri-card:focus .juri-card__wrapper {
   transform: translateY(0%);
   transition: 0.6s transform linear;
 }
