@@ -1,0 +1,39 @@
+.offers-hero {
+  color: var(--txt-base-light);
+
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.offers-hero__wrapper {
+  display: grid;
+  justify-items: center;
+  row-gap: 28px;
+  padding: 30px;
+  background-color: var(--bg-primary-banner);
+}
+
+.offers-hero h3 {
+  display: grid;
+  row-gap: 9px;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.offers-hero h3 > b {
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.offers-hero__img {
+  display: block;
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+
+  @include media-tablet {
+    min-width: 400px;
+  }
+}

@@ -1,0 +1,25 @@
+.offers-card {
+  display: grid;
+  row-gap: 20px;
+  padding: 20px;
+  border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%) 1;
+  border-width: 7px;
+  border-style: solid;
+
+  @include media-tablet {
+    height: 100%;
+  }
+}
+
+.offers-card h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.offers-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 157%;
+
+}

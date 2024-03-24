@@ -10,9 +10,11 @@
 @import "./global/container.scss";
 
 /* BLOCKS */
-@import "./blocks/main.scss";
 @import "./blocks/title.scss";
 @import "./blocks/button.scss";
+@import "./blocks/link.scss";
+
+@import "./blocks/main.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/about/about.scss";
 @import "./blocks/about/video.scss";
@@ -26,3 +28,6 @@
 @import "./blocks/juri/juri-card.scss";
 @import "./blocks/features/features.scss";
 @import "./blocks/features/features-list.scss";
+@import "./blocks/offers/offers.scss";
+@import "./blocks/offers/offers-hero.scss";
+@import './blocks/offers/offers-card.scss';
