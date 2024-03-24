@@ -1,0 +1,112 @@
+.features-list {
+  display: grid;
+  row-gap: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+
+  @include media-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    width: $width-tablet - ($padding-tablet * 2);
+    margin: 0 auto;
+    text-align: start;
+  }
+
+  @include media-desktop {
+    grid-template-columns: repeat(3, 1fr);
+    width: $width-desktop - ($padding-desktop * 2);
+    grid-auto-flow: dense;
+  }
+}
+
+.features-list__item {
+  width: $width-phone - ($padding-phone * 2);
+  margin: 0 auto;
+
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 15px;
+  }
+
+  @include media-desktop {
+    &:not(.features-list__item--accent):nth-child(3n+2) {
+      grid-column: 3 / span 1;
+    }
+  }
+
+  &--accent {
+    width: auto;
+    margin: 5px 0;
+    padding: 30px 75px 40px;
+    background-color: var(--bg-alt-dark);
+    color: var(--txt-base-light);
+
+    @include media-tablet {
+      display: block;
+      grid-column: 1 / span 2;
+      justify-self: center;
+      max-width: 320px;
+      text-align: center;
+    }
+
+    @include media-desktop {
+      max-width: 360px;
+      grid-column: 2 / span 1;
+      grid-row: span 2;
+    }
+  }
+}
+
+.features-list dl {
+  margin: 0;
+}
+
+.features-list dt {
+  display: table;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  background-image: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features-list dd {
+  margin: 0;
+}
+
+.features-list h3 {
+  margin: 12px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+}
+
+.features-list p {
+  margin: 12px 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%
+}
+
+.features-list__item--accent h3 {
+  display: grid;
+  font-weight: 700;
+}
+
+.features-list__item--accent h3 > span:last-child {
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.features-list__item--accent h3 > span:first-child {
+  line-height: 100%;
+  font-size: 64px;
+}
