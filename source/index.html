@@ -487,14 +487,103 @@
 
     <section class="faq" data-test="faq">
 
+      <div class="faq__container container">
+        <h2 class="faq__title title">Вопросы и ответы</h2>
+
+        <ul class="faq__categories faq-categories">
+          <li class="faq-categories__item">
+            <input class="faq-categories__radio" type="radio" name="categories" id="category-centre" value="centre"
+              checked>
+            <label class="faq-categories__name" for="category-centre">Центр</label>
+          </li>
+          <li class="faq-categories__item">
+            <input class="faq-categories__radio" type="radio" name="categories" id="category-subscription"
+              value="subscription">
+            <label class="faq-categories__name" for="category-subscription">Абонемент</label>
+          </li>
+          <li class="faq-categories__item">
+            <input class="faq-categories__radio" type="radio" name="categories" id="category-services" value="services">
+            <label class="faq-categories__name" for="category-services">Услуги</label>
+          </li>
+          <li class="faq-categories__item">
+            <input class="faq-categories__radio" type="radio" name="categories" id="category-rules" value="rules">
+            <label class="faq-categories__name" for="category-rules">Правила</label>
+          </li>
+        </ul>
+
+        <ul class="faq__list faq-list">
+          <li class="faq-list__item">
+            <div class="faq-list__container">
+              <input class="faq-list__checkbox" type="checkbox" name="centre" id="question-1" checked>
+              <label for="question-1">Как стать членом фитнес-центра?<span class="faq-list__marker"></span></label>
+              <div class=" faq-list__content">
+                <div class="faq-list__content-wrapper">
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                    покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <div class="faq-list__container">
+              <input class="faq-list__checkbox" type="checkbox" name="centre" id="question-2">
+              <label for="question-2">Где можно посмотреть расписание?<span class="faq-list__marker"></span></label>
+              <div class=" faq-list__content">
+                <div class="faq-list__content-wrapper">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <div class="faq-list__container">
+              <input class="faq-list__checkbox" type="checkbox" name="centre" id="question-3">
+              <label for="question-3">Есть кулеры в центре? Предоставляются полотенца?<span
+                  class="faq-list__marker"></span></label>
+              <div class=" faq-list__content">
+                <div class="faq-list__content-wrapper">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus earum voluptatem temporibus harum
+                    delectus praesentium maiores nostrum quia nesciunt, explicabo sint quisquam veritatis commodi nemo,
+                    quaerat ducimus. In, facere numquam!</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <div class="faq-list__container">
+              <input class="faq-list__checkbox" type="checkbox" name="centre" id="question-4">
+              <label for="question-4">Сколько тренеров работает в клубе и какова их квалификация?<span
+                  class="faq-list__marker"></span></label>
+              <div class=" faq-list__content">
+                <div class="faq-list__content-wrapper">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam dolore tempora soluta rerum illo
+                    quos, iusto architecto excepturi odio, suscipit natus. Fugiat autem non inventore neque, tempora
+                    itaque cumque in?
+                    Repudiandae sit labore expedita facere maiores adipisci asperiores optio perspiciatis deserunt, odit
+                    magnam ducimus id aut. Eius, odio! Praesentium accusantium perspiciatis sit dolore, in quasi
+                    voluptas doloremque error enim quos?</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="reviews" data-test="reviews">
 
 
     </section>
-    <!--<section class="reviews" data-test="reviews">reviews</section>
-    <section class="form" data-test="form"></section> -->
+    <!--<section class="form" data-test="form"></section> -->
   </main>
 
   <footer data-test="footer" style="height: 300px;">footer</footer>
+
+  <!-- Шаблон вопроса -->
+  <template id="question-marker">
+    <span class="faq-list__marker"></span>
+  </template>
 
   <script type="module" src="js/main.js"></script>
 </body>

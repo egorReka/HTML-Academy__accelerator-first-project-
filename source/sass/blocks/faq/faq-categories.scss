@@ -1,0 +1,57 @@
+.faq-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  @include media-tablet {
+    grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+  }
+
+  @include media-desktop {
+    grid-template-columns: 260px;
+  }
+}
+
+.faq-categories__item {
+  display: grid;
+}
+
+.faq-categories__radio {
+  appearance: none;
+}
+
+.faq-categories__radio ~ .faq-categories__name {
+  display: block;
+  padding: 15px 23px;
+  box-shadow: inset 0 0 0 2px var(--btn-border-alt);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.faq-categories__radio:checked ~ .faq-categories__name {
+  background-image: var(--btn-gradient);
+  box-shadow: inset 0 0 0 2px transparent;
+  color: var(--txt-base-light);
+}
+
+.faq-categories__radio:focus ~ .faq-categories__name,
+.faq-categories__radio:hover ~ .faq-categories__name  {
+    background-image: var(--bg-base-light);
+    box-shadow: inset 0 0 0 2px var(--txt-base-dark);
+    color: var(--txt-base-dark);
+}
+
+.faq-categories__radio:active ~ .faq-categories__name {
+  background-image: var(--btn-gradient);
+  box-shadow: inset 0 0 0 2px transparent;
+  color: var(--txt-base-light);
+}
+
+.faq-categories__radio:disabled ~ .faq-categories__name {
+  background-image: none;
+  color: var(--txt-base-dark);
+  box-shadow: inset 0 0 0 2px var(--txt-base-dark);
+  opacity: 0.3;
+}
