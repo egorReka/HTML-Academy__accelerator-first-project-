@@ -1,0 +1,16 @@
+.reviews {
+  padding: 40px 0;
+
+  @include media-tablet {
+    padding: 60px 0;
+  }
+
+  @include media-desktop {
+    padding: 100px 0;
+  }
+}
+
+.reviews__title {
+  margin: 0 0 40px;
+  text-align: center;
+}

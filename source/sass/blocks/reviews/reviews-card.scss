@@ -1,0 +1,26 @@
+.reviews-card {
+  padding: 30px 25px 20px;
+  text-align: center;
+  color: var(--txt-base-light);
+  background: var(--bg-alt-dark);
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+}
+
+.reviews-card img {
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+}
+
+.reviews-card h3 {
+  margin: 0 0 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+}
+
+.reviews-card p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 157%;
+}

@@ -219,15 +219,15 @@
       <div class="juri__container container">
         <h2 class="juri__title title">Жюри</h2>
       </div>
-      <div class="juri__swiper-container">
+      <div class="juri__swiper juri-swiper"> <!-- juri__swiper-container -->
 
         <button class="juri-swiper__button juri-swiper__button--prev" type="button"
           aria-label="Предыдущие слайды."></button>
 
-        <div class="juri__swiper swiper">
+        <div class="juri-swiper__container swiper"> <!-- juri__swiper -->
           <div class="swiper-wrapper">
 
-            <div class="juri-card swiper-slide" lazy="true">
+            <div class="juri-card swiper-slide">
               <picture>
                 <source srcset="img/juri/juri-1@1x.webp 1x, img/juri/juri-1@2x.webp 2x" type="image/webp" width="227"
                   height="280">
@@ -572,8 +572,57 @@
     </section>
 
     <section class="reviews" data-test="reviews">
+      <div class="container">
+        <h2 class="reviews__title title">Отзывы</h2>
 
+        <div class="reviews-swiper">
 
+          <button class="reviews-swiper__button reviews-swiper__button--prev" type="button"
+            aria-label="Предыдущие отзывы."></button>
+
+          <div class="reviews-swiper__container swiper"><!-- swiper -->
+            <div class="swiper-wrapper">
+
+              <div class="reviews-card swiper-slide">
+                <img src="./img/reviews/user-photo@1x.jpg" srcset="./img/reviews/user-photo@2x.jpg" width="68"
+                  height="68" alt="Фото постоянного клиента.">
+                <div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                    дружелюбный.
+                    Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+
+              <div class="reviews-card swiper-slide">
+                <img src="./img/reviews/user-photo@1x.jpg" srcset="./img/reviews/user-photo@2x.jpg" width="68"
+                  height="68" alt="Фото постоянного клиента.">
+                <div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                    дружелюбный.
+                    Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+
+              <div class="reviews-card swiper-slide">
+                <img src="./img/reviews/user-photo@1x.jpg" srcset="./img/reviews/user-photo@2x.jpg" width="68"
+                  height="68" alt="Фото постоянного клиента.">
+                <div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                    дружелюбный.
+                    Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="reviews-swiper__button reviews-swiper__button--next" type="button"
+            aria-label="Cледующие отзывы."></button>
+        </div>
+      </div>
     </section>
     <!--<section class="form" data-test="form"></section> -->
   </main>
