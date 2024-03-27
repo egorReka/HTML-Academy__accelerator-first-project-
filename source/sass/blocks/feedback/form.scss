@@ -1,0 +1,82 @@
+.form {
+  padding: 70px 0;
+  color: var(--txt-base-light);
+  background-color: var(--bg-base-dark);
+}
+
+.form__container {
+  @include media-desktop {
+    width: auto;
+    padding: 0 $padding-desktop;
+  }
+}
+
+.form__title {
+  text-align: center;
+
+  @include media-desktop {
+    text-align: start;
+  }
+}
+
+.form__wrapper {
+  display: grid;
+  row-gap: 36px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    width: 440px;
+  }
+
+  @include media-desktop {
+    margin: 0;
+  }
+}
+
+.form__group {
+  @include media-tablet {
+    grid-row: 1 / span 1;
+  }
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 4px;
+  border: none;
+  border-bottom: 1px solid #74819c; // TODO opacity: 0.4;
+  background-color: transparent;
+  color: var(--txt-base-light);
+
+  &:focus-visible {
+    outline: 1px solid var(--txt-base-light);
+    outline-offset: 6px;
+  }
+
+  &:hover {
+    border-color: var(--txt-base-light);
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+}
+
+.form__input::placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+  color: var(--txt-base-light);
+  opacity: 0.5;
+}
+
+.form__submit {
+  @include media-tablet {
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+  }
+}
+
+
