@@ -16,8 +16,8 @@ const changCategory = (evt) => {
   }
 };
 
-const InitSelectFaq = () => {
+const initSelectFaq = () => {
   categoriesContainer.addEventListener('change', changCategory);
 };
 
-export { InitSelectFaq };
+export { initSelectFaq };

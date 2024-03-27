@@ -2,12 +2,14 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
-import 'swiper/scss/keyboard';
 
-const swiper = new Swiper('.swiper', {
+const juriSwiperContainer = document.querySelector('.juri-swiper');
+
+const juriSwiper = new Swiper('.juri-swiper__container', {
   modules: [Navigation],
   spaceBetween: 40,
   slidesPerView: 1,
+  initialSlide: 1,
   loop: true,
   preventClicks: true,
   watchSlidesProgress: true,
@@ -34,7 +36,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 const removeFocusSlides = () => {
-  const slides = document.querySelectorAll('.swiper-slide');
+  const slides = juriSwiperContainer.querySelectorAll('.swiper-slide');
 
   slides.forEach((element) => {
     element.removeAttribute('tabindex');
@@ -42,7 +44,7 @@ const removeFocusSlides = () => {
 };
 
 const addFocusVisibleSlides = () => {
-  const visibleSlides = document.querySelectorAll('.swiper-slide-visible');
+  const visibleSlides = juriSwiperContainer.querySelectorAll('.swiper-slide-visible');
 
   visibleSlides.forEach((element) => {
     element.setAttribute('tabindex', 0);
@@ -54,14 +56,14 @@ const updateFocusVisibleElements = () => {
   addFocusVisibleSlides();
 };
 
-const initSwiper = () => {
-  swiper.on('afterInit', addFocusVisibleSlides());
-  swiper.on('transitionEnd', () => {
-    swiper.updateSlidesClasses();
+const initJuriSwiper = () => {
+  juriSwiper.on('afterInit', addFocusVisibleSlides());
+  juriSwiper.on('transitionEnd', () => {
+    juriSwiper.updateSlidesClasses();
     updateFocusVisibleElements();
   });
 
-  swiper.init();
+  juriSwiper.init();
 };
 
-export { initSwiper };
+export { initJuriSwiper };
