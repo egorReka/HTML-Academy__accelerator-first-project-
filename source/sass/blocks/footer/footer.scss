@@ -1,0 +1,26 @@
+.footer {
+  padding: 40px 0;
+  background-color: var(--bg-footer);
+
+  @include media-tablet {
+    padding: 45px 0 48px;
+  }
+}
+
+.footer__container {
+  display: grid;
+  row-gap: 30px;
+
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  width: 100px;
+  height: 20px;
+}

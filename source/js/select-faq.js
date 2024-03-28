@@ -1,3 +1,5 @@
+
+// TODO исправить поведение https://discord.com/channels/886917685244473394/1222474187676061807/1222809058311016500
 import { ASKED_QUESTIONS } from './data.js';
 
 const categoriesContainer = document.querySelector('.faq-categories');

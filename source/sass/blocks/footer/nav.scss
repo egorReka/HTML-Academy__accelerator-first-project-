@@ -1,0 +1,44 @@
+.nav {
+  color: var(--txt-base-light)
+}
+
+.nav__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 15px;
+  margin-left: -10px;
+}
+
+.nav__link {
+  @include reset-link;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  padding: 5px 10px;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+    text-underline-offset: 5px;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: 1px solid var(--txt-base-light);
+  }
+
+  &:active {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:disabled,
+  &:not([href]) {
+    outline: none;
+    text-decoration: none;
+    opacity: 0.4;
+  }
+}

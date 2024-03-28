@@ -1,0 +1,36 @@
+.social {
+  @include reset-list;
+  display: flex;
+  gap: 20px;
+}
+
+.social__link {
+  display: grid;
+  place-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--bg-base-light);
+  color: var(--bg-footer);
+
+  &:hover {
+    color: var(--txt-base-light);
+    background-color: #74819c;
+  }
+
+  &:focus {
+    outline: none;
+    color: var(--txt-base-light);
+    background-color: var(--txt-accent);
+  }
+
+  &:active {
+    background-color: var(--txt-base-dark);
+  }
+
+  &:disabled,
+  &:not([href]) {
+    color: var(--bg-footer);
+    background-color: var(--txt-base-opacity);
+  }
+}

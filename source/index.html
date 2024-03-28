@@ -18,7 +18,7 @@
 
         <header class="hero__header">
           <img class="hero__header-logo" src="img/logo.svg" width="100" height="20" alt="SUPERGYM.">
-          <a class="hero__header-tel" href="tel:+78005555555">8 800 555-55-55</a>
+          <a class="hero__header-tel" href="tel:+78005555555">8 800 555-55-55</a> <!-- TODO стаил гайд -->
         </header>
 
         <div class="hero__wrapper">
@@ -627,7 +627,6 @@
 
     <section class="feedback" data-test="form">
 
-
       <article class="feedback__form form">
         <div class="form__container container">
           <h2 class="form__title">Бесплатное занятие</h2>
@@ -673,23 +672,63 @@
         </div>
       </article>
 
-
-
-
-
     </section>
   </main>
 
-  <footer data-test="footer" style="height: 300px;">footer</footer>
+  <footer class="footer" data-test="footer">
+
+    <div class="footer__container container">
+      <img class="footer__logo" src="img/logo.svg" width="100" height="20" alt="SUPERGYM.">
+
+      <nav class="footer__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#!">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#!">Абонементы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#!">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#!">Тренеры</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#!">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.ru/" aria-label="Мы в Вконтакте.">
+            <svg class="social__icon" role="img" width="13" height="8">
+              <use href="/__spritemap#sprite-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://ok.ru/" aria-label="Мы в Одноклассниках.">
+            <svg class="social__icon" role="img" width="10" height="17">
+              <use href="/__spritemap#sprite-ok"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.reddit.com/" aria-label="Мы в Реддит.">
+            <svg class="social__icon" role="img" width="15" height="15">
+              <use href="/__spritemap#sprite-reddit"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </footer>
 
   <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
-
-
-<!-- пример использования спрайта -->
-<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-<svg>
-  <use href="/__spritemap#sprite-user"></use>
-</svg> -->
