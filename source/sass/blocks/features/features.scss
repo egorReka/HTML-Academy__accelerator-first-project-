@@ -1,9 +1,21 @@
 .features {
   padding: 40px 0;
   background-color: var(--bg-alt-light);
+
+  @include media-tablet {
+    padding: 60px 0;
+  }
+
+  @include media-desktop {
+    padding: 100px 0;
+  }
 }
 
 .features__title {
-  margin: 0;
+  margin: 0 0 40px;
   text-align: center;
+
+  @include media-tablet {
+    margin-bottom: 50px;
+  }
 }

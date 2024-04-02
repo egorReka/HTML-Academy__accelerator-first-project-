@@ -39,22 +39,22 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 45px 30px;
   margin: 0;
+  padding: 40px 0;
   z-index: 2;
-  transform: translateY(65%);
+  transform: translateY(69%);
   transition: 0.3s transform linear;
 }
 
 .juri-card:hover .juri-card__container,
 .juri-card:focus .juri-card__container {
   transform: translateY(0%);
-  transition: 0.5s transform linear;
+  transition: 0.6s transform linear;
 }
 
 
 .juri-card__name {
-  margin: 0 0 8px;
+  margin: 0;
   font-weight: 400;
   font-size: 22px;
   line-height: 100%;
@@ -62,6 +62,7 @@
 }
 
 .juri-card__wrapper {
+  padding: 8px 30px 0;
   transform: translateY(100%);
   transition: 0.3s transform linear;
 }

@@ -7,7 +7,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper__container', {
   modules: [Navigation],
   spaceBetween: 40,
   slidesPerView: 1,
-  initialSlide: 1,
+  initialSlide: 0,
   loop: false,
   preventClicks: true,
   watchSlidesProgress: true,
@@ -19,7 +19,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper__container', {
     768: {
       allowTouchMove: true,
     },
-    1440: {
+    1366: {
       allowTouchMove: false,
     },
   },

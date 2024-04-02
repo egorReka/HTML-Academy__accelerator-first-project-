@@ -19,8 +19,15 @@
 
 .contacts__title {
   margin: 0 0 42px;
+  font-family: var(--ff-second);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 24px;
 
   @include media-tablet {
+    margin-bottom: 36px;
+    font-size: 54px;
+    line-height: 100%;
     text-align: center;
   }
 
@@ -34,12 +41,14 @@
   row-gap: 28px;
 
   @include media-tablet {
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 440px;
+    margin: 0 auto;
   }
 
   @include media-desktop {
     justify-content: flex-start;
+    width: 477px;
   }
 }
 
@@ -49,6 +58,7 @@
   row-gap: 28px;
 
   @include media-tablet {
+    row-gap: 15px;
     min-width: 130px;
 
     &:nth-child(odd) {
@@ -60,6 +70,16 @@
       border-left: 1px solid #74819c; //TODO сменить
     }
   }
+
+  @include media-desktop {
+    &:nth-child(odd) {
+      padding-right: 60px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 59px;
+    }
+  }
 }
 
 .contacts__list-title {
@@ -67,6 +87,11 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
+
+  @include media-tablet {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
 }
 
 .contacts__text {
@@ -75,10 +100,15 @@
   font-size: 14px;
   line-height: 143%;
   font-style: normal;
+
+  @include media-tablet {
+    line-height: 157%;
+  }
 }
 
 .contacts__link {
   @include reset-link;
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
@@ -101,5 +131,9 @@
   &:not([href]) {
     text-decoration: none;
     opacity: 0.2;
+  }
+
+  @include media-tablet {
+    line-height: 157%;
   }
 }

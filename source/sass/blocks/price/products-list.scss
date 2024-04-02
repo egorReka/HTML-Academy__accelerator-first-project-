@@ -2,7 +2,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 380px));
   justify-content: center;
-  gap: 40px;
+  gap: 35px;
+
+  @include media-tablet {
+    gap: 40px;
+  }
 
   @include media-desktop {
     grid-template-columns: repeat(auto-fill, minmax(290px, 360px));
@@ -10,5 +14,7 @@
 }
 
 .products-list__item {
+  position: relative;
   background-color: var(--bg-base-light);
+  z-index: 1;
 }

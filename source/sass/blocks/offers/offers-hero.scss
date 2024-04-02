@@ -8,32 +8,90 @@
 }
 
 .offers-hero__wrapper {
-  display: grid;
-  justify-items: center;
-  row-gap: 28px;
-  padding: 30px;
+  padding: 30px 30px 26px;
   background-color: var(--bg-primary-banner);
+
+  @include media-tablet {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 40px 25px 36px;
+  }
+
+  @include media-desktop {
+    padding: 40px 45px;
+  }
 }
 
 .offers-hero h3 {
   display: grid;
   row-gap: 9px;
+  margin: 0 0 28px;
   font-size: 22px;
   line-height: 100%;
+
+  @include media-tablet {
+    row-gap: 20px;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  @include media-desktop {
+    font-size: 26px;
+  }
 }
 
 .offers-hero h3 > b {
   font-size: 64px;
   line-height: 100%;
+
+  @include media-tablet {
+    font-size: 70px;
+  }
+}
+
+.offers-hero p {
+  margin: 18px 0;
+
+  @include media-tablet {
+    margin: 0 0 18px;
+  }
 }
 
 .offers-hero__img {
   display: block;
   width: 320px;
-  height: auto;
+  height: 360px;
   margin: 0 auto;
 
   @include media-tablet {
     min-width: 400px;
+    height: 462px;
+  }
+
+  @include media-desktop {
+    min-width: 280px;
+    height: 460px;
+  }
+}
+
+.offers-hero__img-wrapper {
+  width: 100%;
+  background-image: linear-gradient(#406ADB, #426CDC 10%, #4B7EE4 30%, #5592E6 50%, #72AFEB 74%, #99C3EF 87%, #B5D2F3),
+    linear-gradient(#528DE6 16%, #528DE6 24%, #5FA4E9 50%, #6AACEA 60%, #B9D5F3);
+  background-repeat: no-repeat;
+  background-position: right, left;
+  background-size: 50%, 50%;
+}
+
+.offers-hero__link {
+  display: block;
+  margin: 0 auto;
+
+  @include media-tablet {
+    margin: 0 auto 0 -10px;
+  }
+
+  @include media-desktop {
+    margin: 0 auto -5px -10px;
   }
 }

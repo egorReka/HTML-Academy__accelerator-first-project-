@@ -1,12 +1,26 @@
 .games-datetime {
   display: grid;
-  gap: 5px;
+  gap: 1px; //TODO ????
+
+  @include media-tablet {
+    gap: 8px;
+  }
+
+  @include media-desktop {
+    gap: 18px;
+  }
 }
 
 .games-datetime__title {
   display: block;
   margin-bottom: 2px;
-  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--txt-base-light);
+
+  @include media-desktop {
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+  }
 }
 
 .games-datetime__text {
@@ -16,7 +30,8 @@
   column-gap: 3px;
 
   @include media-tablet {
-    column-gap: 5px;
+    align-items: center;
+    column-gap: 6px;
   }
 }
 
@@ -26,6 +41,11 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
+
+  @include media-desktop {
+    font-size: 40px;
+    line-height: 125%;
+  }
 }
 
 .games-datetime__month {
@@ -34,6 +54,11 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 157%;
+  }
 }
 
 .games-datetime__year {
@@ -42,10 +67,21 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 157%;
+  }
 }
 
 .games-datetime__time {
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
+
+
+  @include media-desktop {
+    font-size: 40px;
+    line-height: 115%;
+  }
 }

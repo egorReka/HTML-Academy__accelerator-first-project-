@@ -1,5 +1,5 @@
 .hero {
-  padding-bottom: 32px;
+  padding-bottom: 33px;
   color: var(--txt-base-light);
   background-color: var(--bg-alt-dark);
   background-image: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
@@ -9,7 +9,7 @@
   }
 
   @include media-desktop {
-    padding-bottom: 120px;
+    padding-bottom: 119px;
   }
 }
 
@@ -21,7 +21,7 @@
   }
 
   @include media-desktop {
-    column-gap: 56px;
+    column-gap: 16px;
   }
 }
 
@@ -29,11 +29,12 @@
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 15px;
   padding: 16px 0;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
 
   @include media-tablet {
     padding: 30px 0;
@@ -41,37 +42,81 @@
   }
 
   @include media-desktop {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 }
 
 .hero__header-logo {
   display: block;
+  min-width: 100px;
+  min-height: 20px;
+
+  @include media-tablet {
+    width: 110px;
+    height: 22px;
+  }
+
+  @include media-desktop {
+    width: 130px;
+    height: 26px;
+  }
 }
 
 .hero__header-tel {
   @include reset-link;
   font-weight: 700;
   font-size: 22px;
-  line-height: 100%;
+  line-height: 20px;
+
+  &:hover {
+    color: #6977A0; // TODO цвет
+  }
+
+  &:focus {
+    outline: none;
+    color: var(--btn-alt-dark);
+  }
+
+  &:active {
+    color: var(--txt-base-dark);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+
+  &:disabled,
+  &:not([href]) {
+    color: var(--bg-alt-light);
+    opacity: 0.5;
+  }
+
+  @include media-tablet {
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  @include media-desktop {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 .hero__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 48px 20px;
+  gap: 47px 23px; //TODO 47px 20px 0.02
 
   @include media-tablet {
     grid-template-columns: 113px 185px;
     grid-column: 1 / span 1;
     gap: 50px 26px;
-    align-content: center;
     justify-self: flex-end;
+    padding: 31px 0;
   }
 
   @include media-desktop {
     grid-template-columns: 115px 270px;
     gap: 40px 0;
+    padding: 52px 40px 52px 0;
   }
 }
 
@@ -95,24 +140,36 @@
 }
 
 .hero__subtitle {
+  display: block;
   margin-bottom: 14px;
+
+  @include media-tablet {
+    margin-bottom: 10px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__title {
+  display: grid;
   margin: 0;
 }
 
 .hero__link {
   @include reset-link;
   grid-column: 1 / -1;
-  grid-row: -1 / span -1;
   display: block;
-  padding: 22px;
-  border: 2px solid var(--btn-light);
-  text-align: center;
+  padding: 24px;
 
   @include media-tablet {
     grid-column: 2 / -1;
+    padding: 22px;
+  }
+
+  @include media-desktop {
+    padding: 27px;
   }
 }
 

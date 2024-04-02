@@ -3,14 +3,12 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    column-gap: 27px;
-    width: 678px;
+    width: 718px;
   }
 
   @include media-desktop {
     grid-template-columns: auto 1fr auto;
     width: 1272px;
-    column-gap: 29px;
   }
 }
 
@@ -44,12 +42,12 @@
 
     &::after {
       display: block;
-      width: 16px;
-      height: 30px;
+      width: 19px;
+      height: 34px;
       mask-image: url('/__spritemap#sprite-arrow-view');
       mask-repeat: no-repeat;
       mask-position: center;
-      mask-size: 17px 32px;
+      mask-size: contain;
       background-color: var(--btn-dark);
       content: '';
     }
@@ -89,6 +87,16 @@
       &::after {
         background-color: var(--txt-transparent-dark-07);
       }
+    }
+  }
+
+  @include media-desktop {
+    &--prev {
+      margin-left: -20px;
+    }
+
+    &--next {
+      margin-right: -20px;
     }
   }
 }

@@ -8,7 +8,7 @@
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
+  text-underline-offset: 3px;
   color: inherit;
 
 
@@ -25,7 +25,7 @@
     outline-color: transparent;
   }
 
-  &--light {
+  &--light { //TODO primary
     &:focus {
       outline: 1px solid var(--txt-base-light);
     }

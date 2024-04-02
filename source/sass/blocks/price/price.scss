@@ -1,5 +1,6 @@
 .price {
   background-color: var(--bg-alt-light);
+  overflow: hidden;
 
   @include media-tablet {
     display: grid;
@@ -25,7 +26,16 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      transform: rotate(-30deg) translate(18px, -4px);
       content: '';
+    }
+  }
+
+  @include media-desktop {
+    &::after {
+      width: 321px;
+      height: 384px;
+      transform: rotate(-30deg) translate(85px, 38px);
     }
   }
 }
@@ -38,12 +48,27 @@
   @include media-tablet {
     grid-row: 1 / span 2;
     grid-column: 1 / span 1;
+    row-gap: 45px;
+    padding: 60px 0;
+  }
+
+  @include media-desktop {
+    padding: 100px 0 99px;
+    row-gap: 40px;
   }
 }
 
 .price__title {
   margin: 0 0 20px;
   text-align: center;
+
+  @include media-tablet {
+    margin-bottom: 35px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 20px;
+  }
 }
 
 .price__list {

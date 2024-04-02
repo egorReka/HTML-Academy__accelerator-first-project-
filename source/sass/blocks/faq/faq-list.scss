@@ -3,7 +3,12 @@
 }
 
 .faq-list__item {
+  position: relative;
+
   &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     display: block;
     width: 100%;
     height: 1px;
@@ -15,6 +20,16 @@
 .faq-list__container {
   display: grid;
   margin-top: 20px;
+
+  @include media-tablet {
+    margin-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  @include media-desktop {
+    margin-top: 23px;
+    padding: 0;
+  }
 }
 
 .faq-list__checkbox {
@@ -31,6 +46,19 @@
   font-size: 20px;
   line-height: 100%;
   cursor: pointer;
+
+  @include media-tablet {
+    grid-template-columns: 560px auto;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  @include media-desktop {
+    grid-template-columns: 660px auto;
+    margin-bottom: 23px;
+    font-size: 24px;
+  }
 }
 
 .faq-list__marker {
@@ -55,6 +83,17 @@
   &::before {
     transition: 0.3s transform linear;
     transform: rotate(-90deg);
+  }
+
+  @include media-tablet {
+    width: 40px;
+    height: 40px;
+
+    &::after,
+    &::before {
+      width: 20px;
+      height: 2px;
+    }
   }
 }
 
@@ -98,6 +137,14 @@
   display: grid;
   grid-template-rows: 0fr;
   transition: 0.4s grid-template-rows ease;
+
+  @include media-tablet {
+    width: 560px;
+  }
+
+  @include media-desktop {
+    width: 660px;
+  }
 }
 
 .faq-list__checkbox:checked ~ .faq-list__content {
@@ -110,4 +157,12 @@
 
 .faq-list__content-wrapper > p {
   margin: 0 0 20px;
+
+  @include media-tablet {
+    margin-bottom: 10px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 23px;
+  }
 }

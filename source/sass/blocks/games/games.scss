@@ -1,6 +1,14 @@
 .games {
   padding: 25px 0;
   color: var(--txt-base-light);
+
+  @include media-tablet {
+    padding: 60px 0 30px;
+  }
+
+  @include media-desktop {
+    padding: 100px 0;
+  }
 }
 
 .games__container {
@@ -24,8 +32,9 @@
 
   @include media-desktop {
     grid-template-columns: 1fr 95px;
+    align-items: flex-start;
     gap: 30px 70px;
-    padding: 60px 80px;
+    padding: 60px 80px 97px;
   }
 }
 
@@ -34,6 +43,10 @@
   grid-column: 1 / span 1;
   align-self: center;
   margin: 0;
+
+  @include media-tablet {
+    align-self: flex-start;
+  }
 }
 
 .games__datetime {
@@ -42,6 +55,7 @@
 }
 
 .games__text {
+  margin: 0;
   grid-row: 2 / span 1;
   grid-column: 1 / span 2;
 }
@@ -51,6 +65,11 @@
   grid-row: 3 / span 1;
   grid-column: 1 / span 2;
   display: block;
+  padding: 24px;
+
+  @include media-tablet {
+    padding: 27px;
+  }
 }
 
 .games__img-wrapper {
@@ -62,7 +81,7 @@
   display: block;
 
   @include media-tablet {
-    min-width: 378px;
+    min-width: 378px; // TODO уточнить нужно ли?
   }
 
   @include media-desktop {

@@ -17,8 +17,9 @@
 
   @include media-desktop {
     grid-template-columns: repeat(3, 1fr);
-    width: $width-desktop - ($padding-desktop * 2);
     grid-auto-flow: dense;
+    gap: 39px 40px;
+    width: $width-desktop - ($padding-desktop * 2);
   }
 }
 
@@ -30,16 +31,27 @@
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 15px;
+    width: auto;
   }
 
   @include media-desktop {
+    grid-template-columns: auto 210px;
+    justify-content: space-between;
+    width: 100%;
+
     &:not(.features-list__item--accent):nth-child(3n+2) {
       grid-column: 3 / span 1;
+    }
+
+    &:not(.features-list__item--accent):nth-child(n+3) {
+      padding-top: 39px;
+      border-top: 2px solid rgba(209, 10, 66, 0.2);;
     }
   }
 
   &--accent {
     width: auto;
+    min-height: 225px;
     margin: 5px 0;
     padding: 30px 75px 40px;
     background-color: var(--bg-alt-dark);
@@ -50,13 +62,17 @@
       grid-column: 1 / span 2;
       justify-self: center;
       max-width: 320px;
+      padding: 35px 55px;
       text-align: center;
     }
 
     @include media-desktop {
-      max-width: 360px;
       grid-column: 2 / span 1;
       grid-row: span 2;
+      max-width: 360px;
+      min-height: 300px;
+      padding: 58px 40px;
+      margin: 0;
     }
   }
 }
@@ -76,10 +92,22 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @include media-tablet {
+    font-size: 70px;
+  }
 }
 
 .features-list dd {
   margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #2e35ac; // TODO заменить
+
+  @include media-tablet {
+    line-height: 157%;
+  }
 }
 
 .features-list h3 {
@@ -87,26 +115,71 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 111%;
+
+  @include media-tablet {
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  @include media-desktop {
+    margin: 0 0 8px;
+    font-size: 22px;
+  }
 }
 
 .features-list p {
-  margin: 12px 0;
+  margin: 8px 0;
   font-weight: 300;
   font-size: 14px;
-  line-height: 157%
+  line-height: 157%;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
+
+.features-list__item p:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
 
 .features-list__item--accent h3 {
   display: grid;
+  row-gap: 5px;
+  margin: 0 0 20px;
   font-weight: 700;
+
+  @include media-tablet {
+    row-gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  @include media-desktop {
+    row-gap: 10px;
+    margin-bottom: 30px;
+  }
 }
 
 .features-list__item--accent h3 > span:last-child {
   font-size: 22px;
   line-height: 100%;
+
+  @include media-tablet {
+    font-size: 24px;
+  }
+
+  @include media-desktop {
+    font-size: 26px;
+  }
 }
 
 .features-list__item--accent h3 > span:first-child {
-  line-height: 100%;
   font-size: 64px;
+  line-height: 100%;
+
+  @include media-tablet {
+    font-size: 70px;
+    line-height: 100%;
+  }
 }

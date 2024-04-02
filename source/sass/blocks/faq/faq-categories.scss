@@ -28,6 +28,15 @@
   font-size: 16px;
   line-height: 100%;
   text-align: center;
+
+  @include media-tablet {
+    padding: 18px 23px;
+    font-size: 18px;
+  }
+
+  @include media-desktop {
+    padding: 20px 23px 16px;
+  }
 }
 
 .faq-categories__radio:checked ~ .faq-categories__name {

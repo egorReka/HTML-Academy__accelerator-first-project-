@@ -17,7 +17,17 @@
   line-height: 100%;
   color: var(--txt-alt-light);
   cursor: pointer;
-  user-select: none
+  user-select: none;
+
+  @include media-tablet {
+    padding: 2px 0 6px;
+    font-size: 18px;
+  }
+
+  @include media-desktop {
+    padding: 0 0 8px;
+    font-size: 20px;
+  }
 }
 
 .select-months__radio:hover + .select-months__name {
@@ -29,8 +39,16 @@
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-thickness: 2px;
-  text-underline-offset: 14px;
+  text-underline-offset: 15px;
   text-decoration-color: var(--txt-accent-line);
+
+  @include media-tablet {
+    text-underline-offset: 4px;
+  }
+
+  @include media-desktop {
+    text-underline-offset: 6px;
+  }
 }
 
 .select-months__radio:focus + .select-months__name {

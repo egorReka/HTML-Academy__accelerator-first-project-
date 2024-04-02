@@ -2,6 +2,10 @@
   padding: 70px 0;
   color: var(--txt-base-light);
   background-color: var(--bg-base-dark);
+
+  @include media-tablet {
+    padding: 60px 0;
+  }
 }
 
 .form__container {
@@ -12,7 +16,17 @@
 }
 
 .form__title {
-  text-align: center;
+  margin: 0 0 36px;
+  font-family: var(--ff-second);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+
+  @include media-tablet {
+    font-weight: 600;
+    font-size: 54px;
+    text-align: center;
+  }
 
   @include media-desktop {
     text-align: start;
@@ -31,6 +45,7 @@
   }
 
   @include media-desktop {
+    width: 477px;
     margin: 0;
   }
 }
@@ -44,7 +59,7 @@
 .form__input {
   display: block;
   width: 100%;
-  padding: 4px;
+  padding: 0 0 8px;
   border: none;
   border-bottom: 1px solid #74819c; // TODO opacity: 0.4;
   background-color: transparent;
@@ -62,6 +77,10 @@
       opacity: 1;
     }
   }
+
+  @include media-tablet {
+    padding: 0 0 5px;
+  }
 }
 
 .form__input::placeholder {
@@ -73,9 +92,12 @@
 }
 
 .form__submit {
+  padding: 24px;
+
   @include media-tablet {
     grid-column: 1 / -1;
     grid-row: 2 / span 1;
+    padding: 27px;
   }
 }
 

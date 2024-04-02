@@ -39,6 +39,57 @@
   outline: 2px solid var(--btn-border);
   outline-offset: 8px;
   cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 3px);
+    border: 5px solid transparent;
+    border-left: 9px solid var(--btn-light);
+    transform: translate(-50%, -50%);
+    content: '';
+  }
+
+  &:hover {
+    background: var(--btn-light);
+    outline-color: var(--btn-border-alt-alt);
+
+    &::before {
+      border-left-color: var(--bg-base-dark); // TODO поправить
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    background: var(--btn-focus);
+    outline-color: var(--btn-dark);
+
+    &::before {
+      border-left-color: var(--bg-base-dark);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    background: var(--btn-light);
+    outline-color: var(--btn-dark);
+
+    &::before {
+      border-left-color: var(--btn-dark);
+    }
+  }
+
+  @include media-desktop {
+    width: 72px;
+    height: 72px;
+    outline-offset: 12px;
+
+    &::before {
+      left: calc(50% + 6px);
+      border-width: 8px;
+      border-left-width: 12px;
+    }
+  }
 }
 
 .video--enabled {

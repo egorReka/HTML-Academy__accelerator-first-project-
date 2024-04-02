@@ -4,12 +4,40 @@
   color: var(--txt-base-light);
   background: var(--bg-alt-dark);
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+
+  @include media-tablet {
+    padding: 40px 30px 30px;
+    text-align: start;
+  }
+
+  @include media-desktop {
+    padding: 60px 65px 50px 60px;
+  }
+}
+
+.reviews-card__container {
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 40px;
+  }
+
+  @include media-desktop {
+    column-gap: 30px;
+  }
 }
 
 .reviews-card img {
   display: block;
+  width: 68px;
+  height: 68px;
   margin: 0 auto 10px;
   border-radius: 50%;
+
+  @include media-tablet {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .reviews-card h3 {
@@ -17,10 +45,21 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 111%;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 100%;
+  }
 }
 
 .reviews-card p {
   margin: 10px 0;
   font-size: 14px;
   line-height: 157%;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }

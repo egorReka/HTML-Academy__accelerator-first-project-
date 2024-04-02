@@ -5,17 +5,27 @@
   @include media-tablet {
     padding: 45px 0 48px;
   }
+
+  @include media-desktop {
+    padding: 40px 0 44px;
+  }
 }
 
 .footer__container {
   display: grid;
-  row-gap: 30px;
+  row-gap: 25px;
 
   @include media-tablet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 26px;
+  }
+}
+
+.footer__nav {
+  @include media-desktop {
+    width: 620px;
+    margin: 0 auto;
   }
 }
 
@@ -23,4 +33,14 @@
   display: block;
   width: 100px;
   height: 20px;
+
+  @include media-tablet {
+    width: 110px;
+    height: 22px;
+  }
+
+  @include media-desktop {
+    width: 130px;
+    height: 26px;
+  }
 }

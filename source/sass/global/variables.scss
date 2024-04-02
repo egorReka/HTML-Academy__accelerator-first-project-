@@ -1,6 +1,6 @@
 $width-phone: 320px;
 $width-tablet: 768px;
-$width-desktop: 1440px;
+$width-desktop: 1366px;
 
 $padding-phone: 15px;
 $padding-tablet: 45px;
@@ -62,9 +62,11 @@ $bg-light: #E8E8E8;
   --btn-opacity-gradient: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
   --btn-border: #{transparentize($alt-accent-second, 0.8)};
   --btn-border-alt: #{transparentize($base-dark, 0.8)};
+  --btn-border-alt-alt: #{transparentize($base-dark, 0.6)};
   --btn-bg-transparent: rgba(255, 255, 255, 0.8);
   --btn-alt-border: #{$base-black};
   --btn-shadow-bg: #{$bg-light};
+  --btn-focus: #c8c9cc;
 
   // Background color
   --bg-base-light: #{$base-light};

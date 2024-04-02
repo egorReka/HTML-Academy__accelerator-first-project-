@@ -15,4 +15,9 @@
   line-height: 125%;
   color: var(--txt-base-dark);
   background-color: var(--bg-base-light);
+
+  @include media-tablet {
+    font-size: 18px;
+    line-height: 133%;
+  }
 }

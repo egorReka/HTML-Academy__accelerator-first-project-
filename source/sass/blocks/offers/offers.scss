@@ -6,15 +6,32 @@
     padding: 60px 0;
     text-align: start;
   }
+
+  @include media-desktop {
+    padding: 100px 0;
+  }
 }
 
 .offers__title {
+  margin: 0 0 40px;
   text-align: center;
+
+  @include media-tablet {
+    margin-bottom: 35px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 70px;
+  }
 }
 
 .offers__container {
   display: grid;
   row-gap: 40px;
+
+  @include media-tablet {
+    row-gap: 35px;
+  }
 
   @include media-desktop {
     grid-template-columns: repeat(2, 1fr);

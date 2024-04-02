@@ -5,11 +5,12 @@
 
   @include media-tablet {
     justify-content: space-between;
+    column-gap: 10px;
   }
 
   @include media-desktop {
     justify-content: center;
-    column-gap: 40px;
+    column-gap: 20px;
   }
 }
 
@@ -42,22 +43,24 @@
 
     &::after {
       display: block;
-      width: 16px;
-      height: 30px;
+      width: 19px;
+      height: 34px;
       mask-image: url('/__spritemap#sprite-arrow-view');
       mask-repeat: no-repeat;
       mask-position: center;
-      mask-size: 17px 32px;
+      mask-size: contain;
       background-color: var(--btn-dark);
       content: '';
     }
 
     &--prev {
+      margin-left: -20px;
       order: -1;
       transform: rotate(180deg);
     }
 
     &--next {
+      margin-right: -20px;
       order: 1;
     }
 
@@ -87,6 +90,16 @@
       &::after {
         background-color: var(--txt-transparent-dark-07);
       }
+    }
+  }
+
+  @include media-desktop {
+    &--prev {
+      margin-left: 0;
+    }
+
+    &--next {
+      margin-right: 0;
     }
   }
 }

@@ -28,8 +28,9 @@ const juriSwiper = new Swiper('.juri-swiper__container', {
       initialSlide: 0,
       slidesPerView: 2,
     },
-    1440: {
+    1366: {
       allowTouchMove: false,
+      initialSlide: 0,
       slidesPerView: 4,
     },
   },

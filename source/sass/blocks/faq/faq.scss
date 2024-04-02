@@ -1,5 +1,5 @@
 .faq {
-  padding: 40px 0;
+  padding: 70px 0;
   background-color: var(--bg-alt-light);
 
   @include media-tablet {
@@ -28,10 +28,12 @@
 
 .faq__title {
   margin: 0;
+  text-align: center;
 
   @include media-desktop {
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
+    text-align: start
   }
 }
 

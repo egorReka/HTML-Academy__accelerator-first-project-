@@ -1,5 +1,8 @@
 .products-card {
-  padding: 43px 35px;
+  display: grid;
+  gap: 18px;
+  min-height: 414px;
+  padding: 43px 41px;
   text-align: center;
   border-width: 7px;
   border-style: solid;
@@ -15,18 +18,44 @@
   &:focus-within {
     border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
   }
+
+  @include media-tablet {
+    gap: 22px;
+    min-height: 460px;
+    padding: 59px 59px 57px;
+
+  }
+
+  @include media-desktop {
+    gap: 18px;
+    min-height: 450px;
+    padding: 59px 59px 58px;
+  }
 }
 
 .product-card__title {
-  margin: 0 0 18px;
+  margin: 0;
   font-size: 22px;
   line-height: 100%;
+
+  @include media-tablet {
+    font-size: 24px;
+  }
+
+  @include media-desktop {
+    font-size: 26px;
+  }
 }
 
 .product-card__text {
   margin: 0;
   font-size: 14px;
   line-height: 157%;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .products-card__price {
@@ -34,31 +63,45 @@
   align-items: flex-end;
   justify-content: center;
   column-gap: 10px;
-  min-height: 150px;
-  margin: 0 0 18px;
-  padding-top: 21px;
+  min-height: 149px;
+  margin: 0;
+
+  @include media-tablet {
+    column-gap: 14px;
+  }
 }
 
 .products-card__price-shadow {
     grid-row: 1 / span 1;
     grid-column: 1 / span 2;
-    padding: 0 0 9px;
+    padding: 0 0 17px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 80px;
     line-height: 150%;
     text-align: center;
     color: var(--txt-shadow);
+
+    @include media-tablet {
+      font-size: 100px;
+      padding: 0;
+    }
 }
 
 .products-card__term {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
-  padding: 9px 0;
+  padding: 11px 0;
   font-weight: 700;
   font-size: 48px;
   line-height: 150%;
+  text-align: end;
   color: var(--txt-accent);
+
+  @include media-tablet {
+    padding: 0;
+    font-size: 60px;
+  }
 }
 
 .products-card__definition {
@@ -67,14 +110,25 @@
   display: block;
   width: 24px;
   height: 34px;
-  margin: 28px 0;
+  margin: 29px 0;
   mask: url('/__spritemap#sprite-rubble-view') no-repeat;
   mask-position: center;
   mask-size: contain;
   background-color: var(--txt-base-dark);
+
+  @include media-tablet {
+    width: 30px;
+    height: 42px;
+    margin: 24px 0;
+  }
 }
 
 .product-card__link {
   @include reset-link;
   display: block;
+
+  @include media-desktop {
+    width: 195px;
+    margin: 0 auto;
+  }
 }
