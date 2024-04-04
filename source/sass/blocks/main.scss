@@ -1,6 +1,0 @@
-.main__about {
-  @include media-desktop {
-    width: $width-desktop - ($padding-desktop * 2);
-    margin: 0 auto;
-  }
-}

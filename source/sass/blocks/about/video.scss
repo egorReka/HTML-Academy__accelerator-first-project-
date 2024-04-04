@@ -79,6 +79,12 @@
     }
   }
 
+  @include media-tablet {
+    &::before {
+      left: calc(50% + 4px);
+    }
+  }
+
   @include media-desktop {
     width: 72px;
     height: 72px;

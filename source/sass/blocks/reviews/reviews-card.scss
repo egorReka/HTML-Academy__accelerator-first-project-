@@ -41,15 +41,19 @@
 }
 
 .reviews-card h3 {
-  margin: 0 0 16px;
+  margin: 0 0 17px;
   font-weight: 400;
   font-size: 18px;
   line-height: 111%;
 
   @include media-tablet {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     font-size: 22px;
     line-height: 100%;
+  }
+
+  @include media-desktop {
+    margin-bottom: 20px;
   }
 }
 

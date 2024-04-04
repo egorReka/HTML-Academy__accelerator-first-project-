@@ -46,7 +46,66 @@
       </div>
     </section>
 
-    <section class="main__about about" data-test="about">
+    <section class="about" data-test="about">
+      <div class="about__container">
+        <div class="about__wrapper container">
+          <div class="about__title-wrapper">
+            <h2 class="about__title title">Тренажёрный зал</h2>
+            <p class="about__description">Просторный зал площадью 900 кв/м</p>
+          </div>
+          <div class="about__text-wrapper">
+            <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажёрный зал оснащён всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40 тренажёрами. Также в фитнес центре
+              есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
+          </div>
+        </div>
+        <div class="about__media-wrapper">
+          <div class="about__img-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/about/about-desktop@1x.webp, img/about/about-desktop@2x.webp 2x" width="660" height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/about/about-tablet@1x.webp, img/about/about-tablet@2x.webp 2x" width="678" height="345">
+              <source srcset="img/about/about-mobile@1x.webp 1x, img/about/about-mobile@2x.webp 2x" type="image/webp"
+                width="320" height="280">
+              <source type="image/jpg" media="(min-width: 1366px)"
+                srcset="img/about/about-desktop@1x.jpg, img/about/about-desktop@2x.jpg 2x" width="660" height="400">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="img/about/about-tablet@1x.jpg, img/about/about-tablet@2x.jpg 2x" width="678" height="345">
+              <img class="about__img" src="img/about/about-mobile@1x.jpg" srcset="img/about/about-mobile@2x.jpg 2x"
+                width="320" height="280" alt="Оборудованный тренажёрный зал.">
+            </picture>
+          </div>
+          <div class="about__video video">
+            <a class="video__link" href="https://youtu.be/9TZXsZItgdw">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/about/video-desktop@1x.webp 1x, img/about/video-desktop@2x.webp 2x" width="360"
+                  height="230">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/about/video-tablet@1x.webp 1x, img/about/video-tablet@2x.webp 2x" width="270"
+                  height="170">
+                <source srcset="img/about/video-mobile@1x.webp 1x, img/about/video-mobile@2x.webp 2x" type="image/webp"
+                  width="320" height="170">
+                <source type="image/jpg" media="(min-width: 1366px)"
+                  srcset="img/about/video-desktop@1x.jpg 1x, img/about/video-desktop@2x.jpg 2x" width="360"
+                  height="230">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/about/video-tablet@1x.jpg 1x, img/about/video-tablet@2x.jpg 2x" width="270" height="170">
+                <img class="video__media" src="img/about/video-mobile@1x.jpg" srcset="img/about/video-mobile@2x.jpg 2x"
+                  width="320" height="170" alt="Обзор тренажёрного зала.">
+              </picture>
+            </a>
+            <button class="video__button" type="button" aria-label="Запустить видео."></button>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- <section class="main__about about" data-test="about">
       <div class="about__container container">
         <div class="about__title-wrapper">
           <h2 class="about__title title">Тренажёрный зал</h2>
@@ -99,7 +158,7 @@
           <button class="video__button" type="button" aria-label="Запустить видео."></button>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="price" id="price" data-test="price">
       <div class="price__container container">
@@ -420,8 +479,10 @@
           </div>
         </li>
         <li class="features-list__item features-list__item--accent">
-          <h3><span>100</span> <span>Тренажёров</span></h3> <!-- TODO поправить на b -->
-          <p>Современные тренажёры на&nbsp;все группы мышц</p>
+          <div class="features-list__item-wrapper">
+            <h3><span>100</span> <span>Тренажёров</span></h3> <!-- TODO поправить на b -->
+            <p>Современные тренажёры на&nbsp;все группы мышц</p>
+          </div>
         </li>
         <li class="features-list__item">
           <dl>
@@ -602,7 +663,7 @@
               <div class="reviews-card swiper-slide">
                 <div class="reviews-card__container">
                   <img src="./img/reviews/user-photo@1x.jpg" srcset="./img/reviews/user-photo@2x.jpg" width="68"
-                    height="68" alt="Фото постоянного клиента.">
+                    height="68" alt="Фото постоянного клиента."> <!-- TODO пределать через picture -->
                   <div>
                     <h3>Анна Орлова</h3>
                     <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,

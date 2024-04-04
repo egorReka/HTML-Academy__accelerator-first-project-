@@ -1,7 +1,4 @@
 .about {
-  display: grid;
-  row-gap: 36px;
-  justify-items: center;
   padding: 40px 0;
 
   @include media-tablet {
@@ -10,14 +7,29 @@
   }
 
   @include media-desktop {
-    grid-template-columns: auto 1fr;
-    gap: 0 45px;
     padding: 120px 0 125px;
     text-align: start;
   }
 }
 
 .about__container {
+  display: grid;
+  row-gap: 35px;
+  justify-items: center;
+
+  @include media-tablet {
+    row-gap: 36px;
+  }
+
+  @include media-desktop {
+    grid-template-columns: auto 1fr;
+    gap: 0 45px;
+    width: $width-desktop - ($padding-desktop * 2);
+    margin: 0 auto;
+  }
+}
+
+.about__wrapper {
   @include media-tablet {
     width: 487px;
   }
@@ -41,12 +53,13 @@
 }
 
 .about__description {
-  margin: 0 0 36px;
+  margin: 0 0 37px;
   font-weight: 400;
   font-size: 18px;
   line-height: 111%;
 
   @include media-tablet {
+    margin: 0 0 36px;
     font-size: 20px;
     line-height: 100%;
   }
@@ -114,8 +127,6 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
-
-  // @include
 }
 
 .about__video {

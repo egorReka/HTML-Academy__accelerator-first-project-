@@ -1,5 +1,5 @@
 .contacts {
-  padding: 40px 0;
+  padding: 37px 0 39px;
 
   @include media-tablet {
     padding: 60px 0;
@@ -18,16 +18,15 @@
 }
 
 .contacts__title {
-  margin: 0 0 42px;
+  margin: 0 0 38px;
   font-family: var(--ff-second);
   font-weight: 600;
   font-size: 32px;
-  line-height: 24px;
+  line-height: 100%;
 
   @include media-tablet {
     margin-bottom: 36px;
     font-size: 54px;
-    line-height: 100%;
     text-align: center;
   }
 
@@ -66,7 +65,7 @@
     }
 
     &:nth-child(even) {
-      padding-left: 30px;
+      padding-left: 29px;
       border-left: 1px solid #74819c; //TODO сменить
     }
   }

@@ -3,7 +3,7 @@
   text-align: center;
 
   @include media-tablet {
-    padding: 60px 0;
+    padding: 61px 0 60px;
     text-align: start;
   }
 
@@ -17,7 +17,7 @@
   text-align: center;
 
   @include media-tablet {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   @include media-desktop {
@@ -27,7 +27,7 @@
 
 .offers__container {
   display: grid;
-  row-gap: 40px;
+  row-gap: 41px;
 
   @include media-tablet {
     row-gap: 35px;

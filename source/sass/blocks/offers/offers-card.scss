@@ -1,5 +1,5 @@
 .offers-card {
-  padding: 20px 20px 23px;
+  padding: 20px 20px 24px;
   border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%) 1;
   border-width: 7px;
   border-style: solid;
@@ -9,11 +9,12 @@
     grid-template-rows: auto auto 1fr;
     height: 100%;
     min-height: 188px;
-    padding: 20px;
+    padding: 21px 20px 19px;
   }
 
   @include media-desktop {
     min-height: 174px;
+    padding: 20px;
   }
 }
 
@@ -21,6 +22,7 @@
   margin: 0 0 20px;
   font-size: 22px;
   line-height: 100%;
+  color: #1C3374; // TODO цвет
 
   @include media-tablet {
     margin-bottom: 10px;
@@ -29,11 +31,12 @@
 }
 
 .offers-card p {
-  margin: 0 0 17px;
+  margin: 0 0 16px;
   font-size: 14px;
   line-height: 157%;
 
   @include media-tablet {
+    margin: 0 0 17;
     font-size: 16px;
     line-height: 150%;
   }
@@ -47,6 +50,6 @@
   }
 
   @include media-desktop {
-    margin: auto auto -5px -10px;
+    margin: auto auto -3px -10px;
   }
 }

@@ -20,6 +20,7 @@
 
   @include media-tablet {
     width: 500px;
+    min-height: 242px;
   }
 
   @include media-desktop {

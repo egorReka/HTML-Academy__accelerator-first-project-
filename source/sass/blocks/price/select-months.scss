@@ -3,7 +3,12 @@
   flex-wrap: wrap;
   gap: 15px;
   justify-content: space-between;
+  padding-right: 2px;
   border-bottom: 2px solid var(--txt-base-line);
+
+  @include media-tablet {
+    padding: 0;
+  }
 }
 
 .select-months__radio {
@@ -39,10 +44,11 @@
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-thickness: 2px;
-  text-underline-offset: 15px;
+  text-underline-offset: 14px;
   text-decoration-color: var(--txt-accent-line);
 
   @include media-tablet {
+    text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
 

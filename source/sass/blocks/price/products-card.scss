@@ -2,7 +2,7 @@
   display: grid;
   gap: 18px;
   min-height: 414px;
-  padding: 43px 41px;
+  padding: 43px 41px 44px;
   text-align: center;
   border-width: 7px;
   border-style: solid;
@@ -74,13 +74,13 @@
 .products-card__price-shadow {
     grid-row: 1 / span 1;
     grid-column: 1 / span 2;
-    padding: 0 0 17px;
+    padding: 0 0 18px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 80px;
     line-height: 150%;
     text-align: center;
-    color: var(--txt-shadow);
+    color: var(--txt-shadow); // TODO проверить цвет
 
     @include media-tablet {
       font-size: 100px;
@@ -91,7 +91,7 @@
 .products-card__term {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
-  padding: 11px 0;
+  padding: 10px 0;
   font-weight: 700;
   font-size: 48px;
   line-height: 150%;
@@ -110,7 +110,7 @@
   display: block;
   width: 24px;
   height: 34px;
-  margin: 29px 0;
+  margin: 28px 0;
   mask: url('/__spritemap#sprite-rubble-view') no-repeat;
   mask-position: center;
   mask-size: contain;
@@ -120,6 +120,10 @@
     width: 30px;
     height: 42px;
     margin: 24px 0;
+  }
+
+  @include media-desktop {
+    width: 31px;
   }
 }
 

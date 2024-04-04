@@ -1,7 +1,6 @@
 .title {
   font-family: var(--ff-second);
   font-weight: 600;
-  line-height: 100%;
   font-size: 32px;
   line-height: 100%;
 
@@ -27,19 +26,19 @@
   &--big {
     font-weight: 800;
     font-size: 62px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.05rem; // TODO исправить
     text-transform: uppercase;
 
     @include media-tablet {
       font-size: 72px;
       line-height: 118%;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.14rem;
     }
 
     @include media-desktop {
       font-size: 92px;
       line-height: 120%;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.25rem;
     }
   }
 }

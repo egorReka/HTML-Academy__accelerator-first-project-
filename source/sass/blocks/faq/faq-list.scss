@@ -4,6 +4,7 @@
 
 .faq-list__item {
   position: relative;
+  padding-bottom: 1px;
 
   &::after {
     position: absolute;
@@ -15,6 +16,10 @@
     background-color: #74819c;
     content: "";
   }
+
+  @include media-desktop {
+    padding: 0;
+  }
 }
 
 .faq-list__container {
@@ -22,8 +27,8 @@
   margin-top: 20px;
 
   @include media-tablet {
-    margin-top: 25px;
-    padding-bottom: 15px;
+    margin-top: 26px;
+    padding-bottom: 14px;
   }
 
   @include media-desktop {
@@ -92,7 +97,6 @@
     &::after,
     &::before {
       width: 20px;
-      height: 2px;
     }
   }
 }
