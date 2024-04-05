@@ -675,11 +675,13 @@
           <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__group">
               <label class="visually-hidden" for="name">Введите ваше имя.</label>
-              <input class="form__input" id="name" type="text" name="name" placeholder="Имя">
+              <input class="form__input" id="name" type="text" name="name" placeholder="Имя" required>
+              <span class="form__error form__error--name">Некорректное имя</span>
             </div>
             <div class="form__group">
-              <label class="visually-hidden" for="phone">Введите номер телефона имя.</label>
-              <input class="form__input" id="phone" type="text" name="phone" placeholder="Телефон">
+              <label class="visually-hidden" for="phone">Введите номер телефона.</label>
+              <input class="form__input" id="phone" type="text" name="phone" placeholder="Телефон" required>
+              <span class="form__error form__error--phone">Некорректный номер телефона</span>
             </div>
             <button class="form__submit button button--primary" type="submit">отправить</button>
           </form>

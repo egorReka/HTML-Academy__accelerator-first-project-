@@ -1,3 +1,5 @@
+// TODO обьеденить точку входа
+
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/scss';
