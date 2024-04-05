@@ -33,7 +33,7 @@
   }
 }
 
-.product-card__title {
+.products-card__title {
   margin: 0;
   font-size: 22px;
   line-height: 100%;
@@ -47,7 +47,7 @@
   }
 }
 
-.product-card__text {
+.products-card__text {
   margin: 0;
   font-size: 14px;
   line-height: 157%;
@@ -88,7 +88,7 @@
     }
 }
 
-.products-card__term {
+.products-card__price-value {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
   padding: 10px 0;
@@ -104,7 +104,7 @@
   }
 }
 
-.products-card__definition {
+.products-card__price-icon {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1;
   display: block;
@@ -127,7 +127,7 @@
   }
 }
 
-.product-card__link {
+.products-card__link {
   @include reset-link;
   display: block;
 

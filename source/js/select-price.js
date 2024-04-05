@@ -7,7 +7,7 @@ const changesPrice = (evt) => {
   const numberMonths = +evt.target.value;
 
   productsCards.forEach((productCard) => {
-    const valuePrice = productCard.querySelector('.products-card__term');
+    const valuePrice = productCard.querySelector('.products-card__price-value');
     const valueShadowPrice = productCard.querySelector('.products-card__price-shadow');
     const priceOption = +PRICE_OPTIONS[productCard.dataset.option];
 

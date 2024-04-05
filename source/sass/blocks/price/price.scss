@@ -84,8 +84,3 @@
 .price__item {
   display: grid;
 }
-
-.price__products-list {
-  @include reset-list;
-  position: relative;
-}
