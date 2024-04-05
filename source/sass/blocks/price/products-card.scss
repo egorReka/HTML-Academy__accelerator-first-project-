@@ -9,21 +9,20 @@
   border-color: transparent;
 
   &:hover .product-card__link {
-    background-image: var(--btn-gradient);
+    background-image: linear-gradient(151deg, $alt-red 0%, $alt-blue 100%);
     box-shadow: inset 0 0 0 2px transparent;
-    color: var(--txt-base-light);
+    color: $base-white;
   }
 
   &:hover,
   &:focus-within {
-    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
+    border-image: linear-gradient(151deg, $alt-red 0%, $alt-blue 100%) 1;
   }
 
   @include media-tablet {
     gap: 22px;
     min-height: 460px;
     padding: 59px 59px 57px;
-
   }
 
   @include media-desktop {
@@ -72,20 +71,20 @@
 }
 
 .products-card__price-shadow {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 2;
-    padding: 0 0 18px;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--txt-shadow); // TODO проверить цвет
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 2;
+  padding: 0 0 18px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba($alt-light, 0.48);
 
-    @include media-tablet {
-      font-size: 100px;
-      padding: 0;
-    }
+  @include media-tablet {
+    font-size: 100px;
+    padding: 0;
+  }
 }
 
 .products-card__price-value {
@@ -96,7 +95,7 @@
   font-size: 48px;
   line-height: 150%;
   text-align: end;
-  color: var(--txt-accent);
+  color: $base-light-blue;
 
   @include media-tablet {
     padding: 0;
@@ -111,10 +110,10 @@
   width: 24px;
   height: 34px;
   margin: 28px 0;
-  mask: url('/__spritemap#sprite-rubble-view') no-repeat;
+  mask: url("/__spritemap#sprite-rubble-view") no-repeat;
   mask-position: center;
   mask-size: contain;
-  background-color: var(--txt-base-dark);
+  background-color: $base-pearl;
 
   @include media-tablet {
     width: 30px;
@@ -129,6 +128,7 @@
 
 .products-card__link {
   @include reset-link;
+
   display: block;
 
   @include media-desktop {

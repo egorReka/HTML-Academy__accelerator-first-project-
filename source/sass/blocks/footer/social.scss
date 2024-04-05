@@ -1,5 +1,6 @@
 .social {
   @include reset-list;
+
   display: flex;
   gap: 20px;
 
@@ -18,27 +19,27 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: var(--bg-base-light);
-  color: var(--bg-footer);
+  background-color: $base-white;
+  color: $alt-black;
 
   &:hover {
-    color: var(--txt-base-light);
-    background-color: #74819c;
+    color: $base-white;
+    background-color: $base-light-gray;
   }
 
   &:focus {
     outline: none;
-    color: var(--txt-base-light);
-    background-color: var(--txt-accent);
+    color: $base-white;
+    background-color: $base-light-blue;
   }
 
   &:active {
-    background-color: var(--txt-base-dark);
+    background-color: $base-pearl;
   }
 
   &:disabled,
   &:not([href]) {
-    color: var(--bg-footer);
-    background-color: var(--txt-base-opacity);
+    color: $alt-black;
+    background-color: rgba($base-white, 0.3);
   }
 }

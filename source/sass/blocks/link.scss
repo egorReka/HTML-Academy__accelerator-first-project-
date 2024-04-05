@@ -11,7 +11,6 @@
   text-underline-offset: 3px;
   color: inherit;
 
-
   &:hover {
     opacity: 0.8;
   }
@@ -25,24 +24,24 @@
     outline-color: transparent;
   }
 
-  &--light { //TODO primary
+  &--primary {
     &:focus {
-      outline: 1px solid var(--txt-base-light);
+      outline: 1px solid $base-white;
     }
 
     &:active {
-      text-decoration-color: var(--txt-base-light);
+      text-decoration-color: $base-white;
       outline-color: transparent;
     }
   }
 
-  &--dark {
+  &--secondary {
     &:focus {
-      outline: 1px solid var(--txt-base-dark);
+      outline: 1px solid $base-pearl;
     }
 
     &:active {
-      text-decoration-color: var(--txt-base-dark);
+      text-decoration-color: $base-pearl;
       outline-color: transparent;
     }
   }

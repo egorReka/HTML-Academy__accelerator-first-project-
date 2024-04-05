@@ -1,6 +1,6 @@
 .offers-card {
   padding: 20px 20px 24px;
-  border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%) 1;
+  border-image: linear-gradient(151deg, $alt-red 0%, $alt-blue 100%) 1;
   border-width: 7px;
   border-style: solid;
 
@@ -22,7 +22,7 @@
   margin: 0 0 20px;
   font-size: 22px;
   line-height: 100%;
-  color: #1C3374; // TODO цвет
+  color: $base-blue;
 
   @include media-tablet {
     margin-bottom: 10px;

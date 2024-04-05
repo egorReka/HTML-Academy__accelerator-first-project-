@@ -1,5 +1,5 @@
 .price {
-  background-color: var(--bg-alt-light);
+  background-color: $base-light;
   overflow: hidden;
 
   @include media-tablet {
@@ -14,7 +14,6 @@
       display: block;
       width: 275px;
       height: 328px;
-      background-image: url("../../../img/price/plates@1x.png");
       background-image:
         image-set(
           url("../../../img/price/plates@2x.webp") type("image/webp") 2x,
@@ -27,7 +26,7 @@
       background-position: center;
       background-size: cover;
       transform: rotate(-30deg) translate(18px, -2px);
-      content: '';
+      content: "";
     }
   }
 
@@ -53,7 +52,7 @@
   }
 
   @include media-desktop {
-    padding: 100px 0 100px;
+    padding: 100px 0;
     row-gap: 39px;
   }
 }
@@ -73,6 +72,7 @@
 
 .price__list {
   @include reset-list;
+
   max-width: 310px;
   margin: 0 auto;
 

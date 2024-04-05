@@ -1,90 +1,36 @@
+// Font familie
+$ff-primary: "Roboto Condensed", "Arial", sans-serif;
+$ff-second: "Alumni Sans", "Arial", sans-serif;
+
+// Width
 $width-phone: 320px;
 $width-tablet: 768px;
 $width-desktop: 1366px;
 
+// Padding
 $padding-phone: 15px;
 $padding-tablet: 45px;
 $padding-desktop: 103px;
 
-// $divider: #74819c;
-// $play-btn: #ed0233;
-// $light: rgba(16, 38, 84, 0.5);
-// $accent-bg: #ed0233;
-// $btn-border: #1c3374;
-// $tab-border: rgba(16, 38, 84, 0.2);
-//
-// $primary-bg: #f8f9fc;
-// $price: #103aae;
-// $price-shadow: #e8e8e8;
-// $desc: #2e35ac;
-// $secondary: #1c3374;
-// $dark: #030a1a;
-
-
+// Color
 $base-black: #000000;
-$base-light: #FFFFFF;
-$base-dark: #102654;
-$base-accent: #103AAE;
-$alt-light: #F8F9FC;
-$alt-dark: #1C3374;
-$alt-accent-primary: #D10A42;
-$alt-accent-second:#ED0233;
-$line-light: #787878;
-$second-dark: #000143;
-$bg-light: #E8E8E8;
-// $divider: #74819c;
-
-:root {
-  // Font familie
-  --ff-primary: "Roboto Condensed", "Arial", sans-serif;
-  --ff-second: "Alumni Sans", "Arial", sans-serif;
-
-  // Text color
-  --txt-base-dark: #{$base-dark};
-  --txt-base-light: #{$base-light};
-  --txt-accent: #{$base-accent};
-  --txt-alt-light: #{transparentize($base-dark, 0.5)};
-  --txt-alt-dark: #{transparentize($base-dark, 0.3)};
-  --txt-transparent-dark-07: #{transparentize($base-dark, 0.7)};
-  --txt-alt-gradient: linear-gradient(129deg, $alt-accent-primary 0%, #0041CA 100%);
-  --txt-accent-line: #{$alt-accent-primary};
-  --txt-base-line: #{transparentize($line-light, 0.8)};
-  --txt-shadow: #e8e8e8;
-  --txt-alt-card: #b6bdcc;
-  --txt-base-opacity: #{transparentize($base-light, 0.7)};
-
-  // Button color
-  --btn-light: #{$base-light};
-  --btn-dark: #{$base-dark};
-  --btn-alt-dark: #{$alt-dark};
-  --btn-alt-accent: #{$alt-accent-primary};
-  --btn-gradient: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-  --btn-opacity-gradient: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
-  --btn-border: #{transparentize($alt-accent-second, 0.8)};
-  --btn-border-alt: #{transparentize($base-dark, 0.8)};
-  --btn-border-alt-alt: #{transparentize($base-dark, 0.6)};
-  --btn-bg-transparent: rgba(255, 255, 255, 0.8);
-  --btn-alt-border: #{$base-black};
-  --btn-shadow-bg: #{$bg-light};
-  --btn-focus: #c8c9cc;
-
-  // Background color
-  --bg-base-light: #{$base-light};
-  --bg-base-dark: #{$base-dark};
-  --bg-alt-light: #{$alt-light};
-  --bg-alt-dark: #{$alt-dark};
-  --bg-primary-banner: #{$alt-accent-second};
-  --bg-second-banner: #{$second-dark};
-  --bg-footer: #030A1A;
-  --bg-gradient: #003D85-#B80027; // TODO: уточнить!
-  --bg-black: #000000;
-
-  // Icon color
-  --ic-light: #{$base-light};
-  --ic-dark: #{$base-dark};
-
-  // Form color
-  --fc-light: #{$base-light};
-  --fc-err: #{$base-dark};
-}
-
+$alt-black: #030a1a;
+$base-white: #ffffff;
+$base-light: #f8f9fc;
+$alt-light: #e8e8e8;
+$base-gray: #787878;
+$base-light-gray: #74819c;
+$base-pearl: #102654;
+$base-blue: #1c3374;
+$alt-blue: #003eb7;
+$base-light-blue: #103aae;
+$base-bright-blue: #003d85;
+$base-cobalt-blue: #0041ca;
+$base-dark-blue: #000143;
+$alt-dark-blue: #1c3374;
+$base-violet: #2e35ac;
+$base-pale-blue: #c8c9cc;
+$alt-pale-blue: #b6bdcc;
+$base-red: #d10a42;
+$base-bright-red: #b80027;
+$alt-red: #ed0233;

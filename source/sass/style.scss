@@ -1,46 +1,44 @@
 /* VENDOR */
-@import "./vendor/normalize.scss";
+@import "./vendor/normalize";
 
 /* GLOBAL */
-@import "./bootstrap.scss";
-@import "./global/page.scss";
-@import "./global/global.scss";
-@import "./global/fonts.scss";
-@import "./global/visually-hidden.scss";
-@import "./global/container.scss";
+@import "./bootstrap";
+@import "./global/page";
+@import "./global/global";
+@import "./global/fonts";
+@import "./global/visually-hidden";
+@import "./global/container";
 
 /* BLOCKS */
-@import "./blocks/title.scss";
-@import "./blocks/button.scss";
-@import "./blocks/link.scss";
-
-@import "./blocks/hero.scss";
-@import "./blocks/about/about.scss";
-@import "./blocks/about/video.scss";
-@import "./blocks/price/price.scss";
-@import "./blocks/price/select-months.scss";
-@import "./blocks/price/products-list.scss";
-@import "./blocks/price/products-card.scss";
-@import "./blocks/games/games.scss";
-@import "./blocks/games/games-datetime.scss";
-@import "./blocks/juri/juri.scss";
-@import "./blocks/juri/juri-swiper.scss";
-@import "./blocks/juri/juri-card.scss";
-@import "./blocks/features/features.scss";
-@import "./blocks/features/features-list.scss";
-@import "./blocks/offers/offers.scss";
-@import "./blocks/offers/offers-hero.scss";
-@import "./blocks/offers/offers-card.scss";
-@import "./blocks/faq/faq.scss";
-@import "./blocks/faq/faq-categories.scss";
-@import "./blocks/faq/faq-list.scss";
-@import "./blocks/reviews/reviews.scss";
-@import "./blocks/reviews/reviews-swiper.scss";
-@import "./blocks/reviews/reviews-card.scss";
-@import "./blocks/feedback/feedback.scss";
-@import "./blocks/feedback/form.scss";
-@import "./blocks/feedback/contacts.scss";
-@import "./blocks/footer/footer.scss";
-@import "./blocks/footer/nav.scss";
-@import "./blocks/footer/social.scss";
-
+@import "./blocks/title";
+@import "./blocks/button";
+@import "./blocks/link";
+@import "./blocks/hero";
+@import "./blocks/about/about";
+@import "./blocks/about/video";
+@import "./blocks/price/price";
+@import "./blocks/price/select-months";
+@import "./blocks/price/products-list";
+@import "./blocks/price/products-card";
+@import "./blocks/games/games";
+@import "./blocks/games/games-datetime";
+@import "./blocks/juri/juri";
+@import "./blocks/juri/juri-swiper";
+@import "./blocks/juri/juri-card";
+@import "./blocks/features/features";
+@import "./blocks/features/features-list";
+@import "./blocks/offers/offers";
+@import "./blocks/offers/offers-hero";
+@import "./blocks/offers/offers-card";
+@import "./blocks/faq/faq";
+@import "./blocks/faq/faq-categories";
+@import "./blocks/faq/faq-list";
+@import "./blocks/reviews/reviews";
+@import "./blocks/reviews/reviews-swiper";
+@import "./blocks/reviews/reviews-card";
+@import "./blocks/feedback/feedback";
+@import "./blocks/feedback/form";
+@import "./blocks/feedback/contacts";
+@import "./blocks/footer/footer";
+@import "./blocks/footer/nav";
+@import "./blocks/footer/social";

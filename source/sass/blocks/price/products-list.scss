@@ -1,5 +1,6 @@
 .products-list {
   @include reset-list;
+
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 380px));
@@ -17,6 +18,6 @@
 
 .products-list__item {
   position: relative;
-  background-color: var(--bg-base-light);
+  background-color: $base-white;
   z-index: 1;
 }

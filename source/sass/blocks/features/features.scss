@@ -1,6 +1,6 @@
 .features {
   padding: 41px 0 40px;
-  background-color: var(--bg-alt-light);
+  background-color: $base-light;
 
   @include media-tablet {
     padding: 61px 0 60px;

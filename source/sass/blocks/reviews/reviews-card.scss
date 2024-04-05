@@ -1,9 +1,9 @@
 .reviews-card {
   padding: 30px 25px 20px;
   text-align: center;
-  color: var(--txt-base-light);
-  background: var(--bg-alt-dark);
-  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+  color: $base-white;
+  background-color: $base-blue;
+  box-shadow: 0 0 40px 0 rgba($alt-dark-blue, 0.2);
 
   @include media-tablet {
     padding: 40px 30px 30px;

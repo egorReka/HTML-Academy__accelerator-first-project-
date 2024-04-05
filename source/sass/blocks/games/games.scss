@@ -1,6 +1,6 @@
 .games {
   padding: 25px 0;
-  color: var(--txt-base-light);
+  color: $base-white;
 
   @include media-tablet {
     padding: 60px 0 30px;
@@ -24,7 +24,7 @@
   gap: 16px;
   min-height: 320px;
   padding: 39px 41px 40px 40px;
-  background-color: var(--bg-primary-banner);
+  background-color: $alt-red;
 
   @include media-tablet {
     grid-template-columns: 1fr 1fr;
@@ -65,6 +65,7 @@
 
 .games__link {
   @include reset-link;
+
   grid-row: 3 / span 1;
   grid-column: 1 / span 2;
   display: block;
@@ -80,15 +81,14 @@
 }
 
 .games__img-wrapper {
-  background-color: var(--bg-second-banner);
-
+  background-color: $base-dark-blue;
 }
 
 .games__img {
   display: block;
 
   @include media-tablet {
-    min-width: 378px; // TODO уточнить нужно ли?
+    min-width: 378px;
   }
 
   @include media-desktop {

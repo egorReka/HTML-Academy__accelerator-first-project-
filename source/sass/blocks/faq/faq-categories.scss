@@ -23,7 +23,7 @@
 .faq-categories__radio ~ .faq-categories__name {
   display: block;
   padding: 14px 23px 16px;
-  box-shadow: inset 0 0 0 2px var(--btn-border-alt);
+  box-shadow: inset 0 0 0 2px rgba($base-pearl, 0.2);
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -40,27 +40,27 @@
 }
 
 .faq-categories__radio:checked ~ .faq-categories__name {
-  background-image: var(--btn-gradient);
+  background-image: linear-gradient(151deg, $alt-red 0%, $alt-blue 100%);
   box-shadow: inset 0 0 0 2px transparent;
-  color: var(--txt-base-light);
+  color: $base-white;
 }
 
 .faq-categories__radio:focus ~ .faq-categories__name,
-.faq-categories__radio:hover ~ .faq-categories__name  {
-    background-image: var(--bg-base-light);
-    box-shadow: inset 0 0 0 2px var(--txt-base-dark);
-    color: var(--txt-base-dark);
+.faq-categories__radio:hover ~ .faq-categories__name {
+  background-image: $base-white;
+  box-shadow: inset 0 0 0 2px $base-pearl;
+  color: $base-pearl;
 }
 
 .faq-categories__radio:active ~ .faq-categories__name {
-  background-image: var(--btn-gradient);
+  background-image: linear-gradient(151deg, $alt-red 0%, $alt-blue 100%);
   box-shadow: inset 0 0 0 2px transparent;
-  color: var(--txt-base-light);
+  color: $base-white;
 }
 
 .faq-categories__radio:disabled ~ .faq-categories__name {
   background-image: none;
-  color: var(--txt-base-dark);
-  box-shadow: inset 0 0 0 2px var(--txt-base-dark);
+  color: $base-pearl;
+  box-shadow: inset 0 0 0 2px $base-pearl;
   opacity: 0.3;
 }

@@ -21,7 +21,7 @@
   width: 100%;
   height: 100%;
   border: none;
-  background-color: var(--bg-black);
+  background-color: $base-black;
 }
 
 .video__button {
@@ -35,8 +35,8 @@
   transform: translate(-50%, -50%);
   border: none;
   border-radius: 100%;
-  background-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-  outline: 2px solid var(--btn-border);
+  background-image: linear-gradient(151deg, $alt-red 0%, $alt-blue 100%);
+  outline: 2px solid rgba($alt-red, 0.2);
   outline-offset: 8px;
   cursor: pointer;
 
@@ -45,37 +45,35 @@
     top: 50%;
     left: calc(50% + 3px);
     border: 5px solid transparent;
-    border-left: 9px solid var(--btn-light);
+    border-left: 9px solid $base-white;
     transform: translate(-50%, -50%);
-    content: '';
+    content: "";
   }
 
   &:hover {
-    background: var(--btn-light);
-    outline-color: var(--btn-border-alt-alt);
+    background: $base-white;
+    outline-color: rgba($base-pearl, 0.6);
 
     &::before {
-      border-left-color: var(--bg-base-dark); // TODO поправить
-      opacity: 0.6;
+      border-left-color: rgba($base-pearl, 0.6);
     }
   }
 
   &:focus {
-    background: var(--btn-focus);
-    outline-color: var(--btn-dark);
+    background: $base-pale-blue;
+    outline-color: $base-pearl;
 
     &::before {
-      border-left-color: var(--bg-base-dark);
-      opacity: 1;
+      border-left-color: $base-pearl;
     }
   }
 
   &:active {
-    background: var(--btn-light);
-    outline-color: var(--btn-dark);
+    background: $base-white;
+    outline-color: $base-pearl;
 
     &::before {
-      border-left-color: var(--btn-dark);
+      border-left-color: $base-pearl;
     }
   }
 

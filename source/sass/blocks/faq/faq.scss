@@ -1,6 +1,6 @@
 .faq {
   padding: 70px 0;
-  background-color: var(--bg-alt-light);
+  background-color: $base-light;
 
   @include media-tablet {
     padding: 61px 0 60px;
@@ -33,7 +33,7 @@
   @include media-desktop {
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
-    text-align: start
+    text-align: start;
   }
 }
 

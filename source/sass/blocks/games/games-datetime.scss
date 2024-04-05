@@ -16,7 +16,7 @@
   display: block;
   margin-bottom: 3px;
   padding-bottom: 2px;
-  border-bottom: 1px solid var(--txt-base-light);
+  border-bottom: 1px solid $base-white;
 
   @include media-tablet {
     margin-bottom: 3px;

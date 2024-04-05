@@ -6,7 +6,7 @@
   }
 
   @include media-desktop {
-    border-top: 1px solid #74819c;
+    border-top: 1px solid $base-light-gray;
   }
 }
 
@@ -19,7 +19,7 @@
 
 .contacts__title {
   margin: 0 0 38px;
-  font-family: var(--ff-second);
+  font-family: $ff-second;
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
@@ -53,6 +53,7 @@
 
 .contacts__list {
   @include reset-list;
+
   display: grid;
   row-gap: 28px;
 
@@ -66,7 +67,7 @@
 
     &:nth-child(even) {
       padding-left: 29px;
-      border-left: 1px solid #74819c; //TODO сменить
+      border-left: 1px solid $base-light-gray;
     }
   }
 
@@ -107,6 +108,7 @@
 
 .contacts__link {
   @include reset-link;
+
   display: block;
   font-weight: 400;
   font-size: 14px;

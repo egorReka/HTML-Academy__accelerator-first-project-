@@ -1,7 +1,7 @@
 .hero {
   padding-bottom: 32px;
-  color: var(--txt-base-light);
-  background-color: var(--bg-alt-dark);
+  color: $base-white;
+  background-color: $base-blue;
   background-image: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 
   @include media-tablet {
@@ -65,30 +65,29 @@
 
 .hero__header-tel {
   @include reset-link;
+
   margin-right: 1px;
   font-weight: 700;
   font-size: 22px;
   line-height: 100%;
 
   &:hover {
-    color: #6977A0; // TODO цвет
+    color: rgba($alt-dark-blue, 0.5);
   }
 
   &:focus {
-    outline: none;
-    color: var(--btn-alt-dark);
+    color: $base-blue;
   }
 
   &:active {
-    color: var(--txt-base-dark);
+    color: $base-pearl;
     text-decoration: underline;
     text-underline-offset: 6px;
   }
 
   &:disabled,
   &:not([href]) {
-    color: var(--bg-alt-light);
-    opacity: 0.5;
+    color: rgba($base-light, 0.5);
   }
 
   @include media-tablet {
@@ -105,7 +104,7 @@
 .hero__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 48px 22px; //TODO 47px 20px 0.02
+  gap: 48px 22px;
 
   @include media-tablet {
     grid-template-columns: 113px 185px;
@@ -162,6 +161,7 @@
 
 .hero__link {
   @include reset-link;
+
   grid-column: 1 / -1;
   display: block;
   padding: 24px;

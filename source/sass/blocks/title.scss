@@ -1,5 +1,5 @@
 .title {
-  font-family: var(--ff-second);
+  font-family: $ff-second;
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
@@ -26,7 +26,7 @@
   &--big {
     font-weight: 800;
     font-size: 62px;
-    letter-spacing: 0.05rem; // TODO исправить
+    letter-spacing: 0.05rem;
     text-transform: uppercase;
 
     @include media-tablet {

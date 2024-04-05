@@ -1,7 +1,7 @@
 .form {
   padding: 71px 0 70px;
-  color: var(--txt-base-light);
-  background-color: var(--bg-base-dark);
+  color: $base-white;
+  background-color: $base-pearl;
 
   @include media-tablet {
     padding: 60px 0;
@@ -17,7 +17,7 @@
 
 .form__title {
   margin: 0 0 37px;
-  font-family: var(--ff-second);
+  font-family: $ff-second;
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
@@ -58,26 +58,29 @@
   }
 }
 
-.form__input {
+.form__input { // TODO дописаить js исправить размеры outline offset
   display: block;
   width: 100%;
   padding: 0 0 6px;
   border: none;
-  border-bottom: 1px solid #74819c; // TODO opacity: 0.4;
+  border-bottom: 1px solid $base-light-gray;
   background-color: transparent;
-  color: var(--txt-base-light);
+  color: $base-white;
+
+  &:hover {
+    border-color: $base-white;
+  }
 
   &:focus-visible {
-    outline: 1px solid var(--txt-base-light);
+    border-color: transparent;
+    outline: 1px solid $base-white;
     outline-offset: 6px;
   }
 
-  &:hover {
-    border-color: var(--txt-base-light);
-
-    &::placeholder {
-      opacity: 1;
-    }
+  &:disabled {
+    outline: none;
+    border-color: rgba($base-white, 0.3);
+    color: rgba($base-white, 0.4);
   }
 
   @include media-tablet {
@@ -89,9 +92,10 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 157%;
-  color: var(--txt-base-light);
-  opacity: 0.5;
+  color: rgba($base-white, 0.7);
 }
+
+
 
 .form__submit {
   padding: 24px;
@@ -101,10 +105,4 @@
     grid-row: 2 / span 1;
     padding: 28px 27px 26px;
   }
-
-  @include media-desktop {
-    // padding: 28px 27px 26px;
-  }
 }
-
-

@@ -44,12 +44,12 @@
       display: block;
       width: 19px;
       height: 34px;
-      mask-image: url('/__spritemap#sprite-arrow-view');
+      mask-image: url("/__spritemap#sprite-arrow-view");
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: contain;
-      background-color: var(--btn-dark);
-      content: '';
+      background-color: $base-pearl;
+      content: "";
     }
 
     &--prev {
@@ -62,20 +62,20 @@
     }
 
     &:hover {
-      outline: 1px solid var(--btn-dark);
+      outline: 1px solid $base-pearl;
     }
 
     &:focus {
-      background-color: var(--btn-shadow-bg);
-      outline: 1px solid var(--btn-dark);
+      background-color: $alt-light;
+      outline: 1px solid $base-pearl;
     }
 
     &:active {
-      background-color: var(--btn-dark);
-      outline: 1px solid var(--btn-dark);
+      background-color: $base-pearl;
+      outline: 1px solid $base-pearl;
 
       &::after {
-        background-color: var(--btn-light);
+        background-color: $base-white;
       }
     }
 
@@ -85,7 +85,7 @@
       cursor: default;
 
       &::after {
-        background-color: var(--txt-transparent-dark-07);
+        background-color: rgba($base-pearl, 0.3);
       }
     }
   }
@@ -100,4 +100,3 @@
     }
   }
 }
-

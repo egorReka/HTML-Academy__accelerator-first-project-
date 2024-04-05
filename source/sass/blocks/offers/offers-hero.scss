@@ -1,5 +1,5 @@
 .offers-hero {
-  color: var(--txt-base-light);
+  color: $base-white;
 
   @include media-tablet {
     display: grid;
@@ -9,7 +9,7 @@
 
 .offers-hero__wrapper {
   padding: 30px 30px 26px;
-  background-color: var(--bg-primary-banner);
+  background-color: $alt-red;
 
   @include media-tablet {
     display: grid;
@@ -76,8 +76,9 @@
 
 .offers-hero__img-wrapper {
   width: 100%;
-  background-image: linear-gradient(#406ADB, #426CDC 10%, #4B7EE4 30%, #5592E6 50%, #72AFEB 74%, #99C3EF 87%, #B5D2F3),
-    linear-gradient(#528DE6 16%, #528DE6 24%, #5FA4E9 50%, #6AACEA 60%, #B9D5F3);
+  background-image:
+    linear-gradient(#406adb, #426cdc 10%, #4b7ee4 30%, #5592e6 50%, #72afeb 74%, #99c3ef 87%, #b5d2f3),
+    linear-gradient(#528de6 16%, #528de6 24%, #5fa4e9 50%, #6aacea 60%, #b9d5f3);
   background-repeat: no-repeat;
   background-position: right, left;
   background-size: 50%, 50%;

@@ -1,5 +1,5 @@
 .faq-list {
-  border-top: 1px solid #74819c;
+  border-top: 1px solid $base-light-gray;
 }
 
 .faq-list__item {
@@ -13,7 +13,7 @@
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #74819c;
+    background-color: $base-light-gray;
     content: "";
   }
 
@@ -71,7 +71,7 @@
   place-content: center;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--btn-alt-dark);
+  border: 1px solid $base-blue;
   border-radius: 50%;
   transition: 0.6s transform ease-out;
 
@@ -81,7 +81,7 @@
     grid-column: 1 / span 1;
     width: 14px;
     height: 1px;
-    background-color: var(--btn-alt-dark);
+    background-color: $base-blue;
     content: "";
   }
 
@@ -102,21 +102,21 @@
 }
 
 .faq-list__checkbox:hover ~ label > .faq-list__marker {
-    background-color: var(--btn-alt-dark);
+  background-color: $base-blue;
 
-    &::after,
-    &::before {
-      background-color: var(--btn-light);
+  &::after,
+  &::before {
+    background-color: $base-white;
   }
 }
 
 .faq-list__checkbox:checked ~ label > .faq-list__marker {
-  background-color: var(--btn-alt-dark);
+  background-color: $base-blue;
   transform: rotate(180deg);
 
   &::after,
   &::before {
-    background-color: var(--btn-light);
+    background-color: $base-white;
   }
 
   &::before {
@@ -125,15 +125,15 @@
 }
 
 .faq-list__checkbox:focus ~ label > .faq-list__marker {
-  background-color: #74819c;
+  background-color: $base-light-gray;
 
   &::after,
   &::before {
-    background-color: var(--btn-light);
+    background-color: $base-white;
   }
 }
 
-.faq-list__checkbox:disabled ~ label > .faq-list__marker{
+.faq-list__checkbox:disabled ~ label > .faq-list__marker {
   opacity: 0.3;
 }
 

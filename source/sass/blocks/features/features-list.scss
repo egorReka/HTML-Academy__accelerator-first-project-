@@ -45,7 +45,7 @@
 
     &:not(.features-list__item--accent):nth-child(n+3) {
       padding-top: 39px;
-      border-top: 2px solid rgba(209, 10, 66, 0.2);;
+      border-top: 2px solid rgba($base-red, 0.2);
     }
   }
 
@@ -54,8 +54,8 @@
     min-height: 225px;
     margin: 5px 0;
     padding: 30px 75px 40px;
-    background-color: var(--bg-alt-dark);
-    color: var(--txt-base-light);
+    background-color: $base-blue;
+    color: $base-white;
 
     @include media-tablet {
       display: block;
@@ -97,10 +97,9 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
-  background-image: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+  background-image: linear-gradient(129deg, $base-red 0%, $base-cobalt-blue 100%);
   background-position: center;
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @include media-tablet {
@@ -114,7 +113,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
-  color: #2e35ac; // TODO заменить
+  color: $base-violet;
 
   @include media-tablet {
     line-height: 157%;
@@ -155,8 +154,8 @@
 }
 
 .features-list__item p:nth-last-of-type(1) {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
+}
 
 .features-list__item--accent h3 {
   display: grid;
@@ -175,7 +174,16 @@
   }
 }
 
-.features-list__item--accent h3 > span:last-child {
+.features-list__item--accent h3 > b {
+  font-size: 64px;
+  line-height: 100%;
+
+  @include media-tablet {
+    font-size: 70px;
+  }
+}
+
+.features-list__item--accent h3 > span {
   font-size: 22px;
   line-height: 100%;
 
@@ -185,14 +193,5 @@
 
   @include media-desktop {
     font-size: 26px;
-  }
-}
-
-.features-list__item--accent h3 > span:first-child {
-  font-size: 64px;
-  line-height: 100%;
-
-  @include media-tablet {
-    font-size: 70px;
   }
 }

@@ -4,7 +4,7 @@
   gap: 15px;
   justify-content: space-between;
   padding-right: 2px;
-  border-bottom: 2px solid var(--txt-base-line);
+  border-bottom: 2px solid rgba($base-gray, 0.2);
 
   @include media-tablet {
     padding: 0;
@@ -20,53 +20,49 @@
   padding: 10px 0 17px;
   font-weight: 400;
   line-height: 100%;
-  color: var(--txt-alt-light);
+  color: rgba($base-pearl, 0.5);
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 14px;
+  text-decoration-color: transparent;
   cursor: pointer;
   user-select: none;
 
   @include media-tablet {
     padding: 2px 0 6px;
     font-size: 18px;
-  }
-
-  @include media-desktop {
-    padding: 0 0 8px;
-    font-size: 20px;
-  }
-}
-
-.select-months__radio:hover + .select-months__name {
-  color: var(--txt-alt-dark);
-}
-
-.select-months__radio:checked + .select-months__name {
-  color: var(--txt-base-dark);
-  text-decoration: underline;
-  text-underline-position: under;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 14px;
-  text-decoration-color: var(--txt-accent-line);
-
-  @include media-tablet {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
 
   @include media-desktop {
+    padding: 0 0 8px;
+    font-size: 20px;
     text-underline-offset: 6px;
   }
 }
 
+.select-months__radio:hover + .select-months__name {
+  color: rgba($base-pearl, 0.7);
+  text-decoration-color: $base-gray;
+}
+
+.select-months__radio:checked + .select-months__name {
+  color: $base-pearl;
+  text-decoration-color: $base-red;
+}
+
 .select-months__radio:focus + .select-months__name {
-  text-decoration-color: var(--txt-base-dark);
+  text-decoration-color: $base-pearl;
 }
 
 .select-months__radio:active + .select-months__name {
-  text-decoration-color: var(--txt-accent-line);
+  text-decoration-color: $base-red;
 }
 
 .select-months__radio:disabled + .select-months__name {
-  color: var(--txt-transparent-dark-07);
-  text-decoration-color: var(--txt-transparent-dark-07);
+  color: rgba($base-pearl, 0.3);
+  text-decoration-color: rgba($base-pearl, 0.3);
   cursor: default;
 }

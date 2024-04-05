@@ -1,9 +1,10 @@
 .nav {
-  color: var(--txt-base-light)
+  color: $base-white;
 }
 
 .nav__list {
   @include reset-list;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -23,6 +24,7 @@
 
 .nav__link {
   @include reset-link;
+
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -38,7 +40,7 @@
 
   &:focus {
     text-decoration: none;
-    outline: 1px solid var(--txt-base-light);
+    outline: 1px solid $base-white;
   }
 
   &:active {
