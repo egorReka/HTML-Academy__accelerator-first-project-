@@ -12,8 +12,8 @@
 
 .contacts__container {
   @include media-desktop {
-    width: auto;
-    padding: 0 $padding-desktop;
+    width: calc($width-desktop / 2) - calc($padding-desktop * 2);
+    margin: 0 auto 0 $padding-desktop;
   }
 }
 
@@ -46,8 +46,8 @@
   }
 
   @include media-desktop {
-    justify-content: flex-start;
-    width: 477px;
+    width: auto;
+    margin: 0;
   }
 }
 
@@ -110,6 +110,7 @@
   @include reset-link;
 
   display: block;
+  width: max-content;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
@@ -117,7 +118,6 @@
   &:hover,
   &:focus {
     opacity: 0.5;
-    outline: none;
   }
 
   &:active {

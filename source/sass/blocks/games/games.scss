@@ -86,12 +86,15 @@
 
 .games__img {
   display: block;
+  object-fit: cover;
 
   @include media-tablet {
     min-width: 378px;
+    height: 348px;
   }
 
   @include media-desktop {
     min-width: 660px;
+    height: 500px;
   }
 }

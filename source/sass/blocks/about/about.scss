@@ -112,13 +112,17 @@
 .about__img {
   display: block;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 
   @include media-tablet {
     width: 678px;
+    height: 345px;
   }
 
   @include media-desktop {
     width: 660px;
+    height: 400px;
   }
 }
 

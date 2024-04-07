@@ -13,6 +13,10 @@
 
 .select-months__radio {
   appearance: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .select-months__name {

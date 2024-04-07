@@ -18,6 +18,10 @@
 
 .faq-categories__radio {
   appearance: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .faq-categories__radio ~ .faq-categories__name {

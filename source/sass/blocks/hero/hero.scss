@@ -168,7 +168,8 @@
 
   @include media-tablet {
     grid-column: 2 / -1;
-    padding: 22px 22px 20px;
+    align-self: flex-end;
+    padding: 22px;
   }
 
   @include media-desktop {
@@ -188,4 +189,14 @@
 
 .hero__img {
   display: block;
+
+  @include media-tablet {
+    width: 324px;
+    height: 390px;
+  }
+
+  @include media-desktop {
+    width: 500px;
+    height: 524px;
+  }
 }

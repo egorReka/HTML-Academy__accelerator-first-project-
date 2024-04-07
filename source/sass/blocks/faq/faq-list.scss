@@ -39,6 +39,10 @@
 
 .faq-list__checkbox {
   appearance: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .faq-list label {

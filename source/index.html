@@ -4,7 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Фитнес центр SUPERGYM">
+  <meta name="description" content="Большой фитнес центр в Омске.">
   <title>SUPERGYM</title>
+  <link rel="preload" href="fonts/alumni-sans/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/Roboto-Condensed-Regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/Roboto-Condensed-Light.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="img/about/about-mobile@2x.webp" as="image" type="image/webp">
   <link rel="icon" sizes="32x32" href="favicons/favicon.png" type="image/png">
   <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
   <link rel="stylesheet" href="sass/style.scss">
@@ -38,8 +47,10 @@
               srcset="img/hero/hero-img-tablet@1x.webp, img/hero/hero-img-tablet@2x.webp 2x" width="324" height="390">
             <source type="image/jpg" media="(min-width: 1366px)"
               srcset="img/hero/hero-img-desktop@1x.jpg, img/hero/hero-img-desktop@2x.jpg 2x" width="500" height="524">
-            <img class="hero__img" src="img/hero/hero-img-tablet@1x.jpg" srcset="img/hero/hero-img-tablet@2x.jpg 2x"
-              width="324" height="390" alt="Тренер супермен.">
+            <source type="image/jpg" media="(min-width: 768px)"
+              srcset="img/hero/hero-img-tablet@1x.jpg, img/hero/hero-img-tablet@2x.jpg 2x" width="324" height="390">
+            <!-- Пустой src для избежания загрузки изображения на мобильном устройстве -->
+            <img class="hero__img" src="/" width="0" height="0" alt="Тренер супермен.">
           </picture>
         </div>
 
@@ -209,7 +220,7 @@
             <source type="image/jpg" media="(min-width: 768px)"
               srcset="img/games/games-tablet@1x.jpg, img/games/games-tablet@2x.jpg 2x" width="378" height="348">
             <img class="games__img" src="img/games/games-mobile@1x.jpg" srcset="img/about/games-mobile@2x.jpg 2x"
-              width="290" height="290" alt="Спортсмен на соревнованиях по CrossFit.">
+              width="290" height="290" alt="Спортсмен на соревнованиях по CrossFit." loading="lazy">
           </picture>
         </div>
       </div>
@@ -219,12 +230,12 @@
       <div class="juri__container container">
         <h2 class="juri__title title">Жюри</h2>
       </div>
-      <div class="juri__swiper juri-swiper"><!-- juri__swiper-container -->
+      <div class="juri__swiper juri-swiper">
 
         <button class="juri-swiper__button juri-swiper__button--prev" type="button"
           aria-label="Предыдущие слайды."></button>
 
-        <div class="juri-swiper__container swiper"><!-- juri__swiper -->
+        <div class="juri-swiper__container swiper">
           <div class="swiper-wrapper">
 
             <div class="juri-card swiper-slide">
@@ -232,7 +243,7 @@
                 <source srcset="img/juri/juri-1@1x.webp 1x, img/juri/juri-1@2x.webp 2x" type="image/webp" width="227"
                   height="280">
                 <img class="juri-card__img" src="img/juri/juri-1@1x.jpg" srcset="img/juri/juri-1@2x.jpg 2x" width="227"
-                  height="280" alt="Фото члена жюри.">
+                  height="280" alt="Фото члена жюри." loading="lazy">
               </picture>
               <div class="juri-card__container">
                 <h3 class="juri-card__name">Анна Павлова</h3>
@@ -252,7 +263,7 @@
                 <source srcset="img/juri/juri-2@1x.webp 1x, img/juri/juri-2@2x.webp 2x" type="image/webp" width="227"
                   height="280">
                 <img class="juri-card__img" src="img/juri/juri-2@1x.jpg" srcset="img/juri/juri-2@2x.jpg 2x" width="227"
-                  height="280" alt="Фото члена жюри.">
+                  height="280" alt="Фото члена жюри." loading="lazy">
               </picture>
               <div class="juri-card__container">
                 <h3 class="juri-card__name">Алексей Лавров</h3>
@@ -272,7 +283,7 @@
                 <source srcset="img/juri/juri-3@1x.webp 1x, img/juri/juri-3@2x.webp 2x" type="image/webp" width="227"
                   height="280">
                 <img class="juri-card__img" src="img/juri/juri-3@1x.jpg" srcset="img/juri/juri-3@2x.jpg 2x" width="227"
-                  height="280" alt="Фото члена жюри.">
+                  height="280" alt="Фото члена жюри." loading="lazy">
               </picture>
               <div class="juri-card__container">
                 <h3 class="juri-card__name">Александр Пашков</h3>
@@ -292,7 +303,7 @@
                 <source srcset="img/juri/juri-4@1x.webp 1x, img/juri/juri-4@2x.webp 2x" type="image/webp" width="227"
                   height="280">
                 <img class="juri-card__img" src="img/juri/juri-4@1x.jpg" srcset="img/juri/juri-4@2x.jpg 2x" width="227"
-                  height="280" alt="Фото члена жюри.">
+                  height="280" alt="Фото члена жюри." loading="lazy">
               </picture>
               <div class="juri-card__container">
                 <h3 class="juri-card__name">Мария Кетова</h3>
@@ -309,10 +320,10 @@
 
             <div class="juri-card swiper-slide">
               <picture>
-                <source srcset="img/juri/juri-1@1x.webp 1x, img/juri/juri-1@2x.webp 2x" type="image/webp" width="227"
+                <source srcset="img/juri/juri-5@1x.webp 1x, img/juri/juri-5@2x.webp 2x" type="image/webp" width="227"
                   height="280">
-                <img class="juri-card__img" src="img/juri/juri-1@1x.jpg" srcset="img/juri/juri-1@2x.jpg 2x" width="227"
-                  height="280" alt="Фото члена жюри.">
+                <img class="juri-card__img" src="img/juri/juri-5@1x.jpg" srcset="img/juri/juri-5@2x.jpg 2x" width="227"
+                  height="280" alt="Фото члена жюри." loading="lazy">
               </picture>
               <div class="juri-card__container">
                 <h3 class="juri-card__name">Анна Павлова</h3>
@@ -332,7 +343,7 @@
                 <source srcset="img/juri/juri-2@1x.webp 1x, img/juri/juri-2@2x.webp 2x" type="image/webp" width="227"
                   height="280">
                 <img class="juri-card__img" src="img/juri/juri-2@1x.jpg" srcset="img/juri/juri-2@2x.jpg 2x" width="227"
-                  height="280" alt="Фото члена жюри.">
+                  height="280" alt="Фото члена жюри." loading="lazy">
               </picture>
               <div class="juri-card__container">
                 <h3 class="juri-card__name">Алексей Лавров</h3>
@@ -352,7 +363,7 @@
                 <source srcset="img/juri/juri-3@1x.webp 1x, img/juri/juri-3@2x.webp 2x" type="image/webp" width="227"
                   height="280">
                 <img class="juri-card__img" src="img/juri/juri-3@1x.jpg" srcset="img/juri/juri-3@2x.jpg 2x" width="227"
-                  height="280" alt="Фото члена жюри.">
+                  height="280" alt="Фото члена жюри." loading="lazy">
               </picture>
               <div class="juri-card__container">
                 <h3 class="juri-card__name">Александр Пашков</h3>
@@ -372,7 +383,7 @@
                 <source srcset="img/juri/juri-4@1x.webp 1x, img/juri/juri-4@2x.webp 2x" type="image/webp" width="227"
                   height="280">
                 <img class="juri-card__img" src="img/juri/juri-4@1x.jpg" srcset="img/juri/juri-4@2x.jpg 2x" width="227"
-                  height="280" alt="Фото члена жюри.">
+                  height="280" alt="Фото члена жюри." loading="lazy">
               </picture>
               <div class="juri-card__container">
                 <h3 class="juri-card__name">Мария Кетова</h3>
@@ -481,10 +492,11 @@
                 height="462">
               <img class="offers-hero__img" src="img/offers/offers-hero-mobile@1x.jpg"
                 srcset="img/offers/offers-hero-mobile@2x.jpg 2x" width="320" height="360"
-                alt="Спортивная девушка на фоне неба.">
+                alt="Спортивная девушка на фоне неба." loading="lazy">
             </picture>
           </div>
         </article>
+
         <ul class="offers__list">
           <li class="offers__item">
             <article class="offers-card">
@@ -505,7 +517,6 @@
     </section>
 
     <section class="faq" data-test="faq">
-
       <div class="faq__container container">
         <h2 class="faq__title title">Вопросы и ответы</h2>
 
@@ -533,7 +544,8 @@
         <ul class="faq__list faq-list">
           <li class="faq-list__item">
             <div class="faq-list__container">
-              <input class="faq-list__checkbox" type="checkbox" name="question-1" id="question-1" checked>
+              <input class="faq-list__checkbox" type="checkbox" name="question-1" id="question-1" checked
+                data-test="toggle">
               <label for="question-1">Как стать членом фитнес&#8209;центра?<span
                   class="faq-list__marker"></span></label>
               <div class=" faq-list__content">
@@ -547,7 +559,7 @@
           </li>
           <li class="faq-list__item">
             <div class="faq-list__container">
-              <input class="faq-list__checkbox" type="checkbox" name="question-2" id="question-2">
+              <input class="faq-list__checkbox" type="checkbox" name="question-2" id="question-2" data-test="toggle">
               <label for="question-2">Где можно посмотреть расписание?<span class="faq-list__marker"></span></label>
               <div class=" faq-list__content">
                 <div class="faq-list__content-wrapper">
@@ -558,7 +570,7 @@
           </li>
           <li class="faq-list__item">
             <div class="faq-list__container">
-              <input class="faq-list__checkbox" type="checkbox" name="question-3" id="question-3">
+              <input class="faq-list__checkbox" type="checkbox" name="question-3" id="question-3" data-test="toggle">
               <label for="question-3">Есть кулеры в центре? Предоставляются полотенца?<span
                   class="faq-list__marker"></span></label>
               <div class=" faq-list__content">
@@ -572,7 +584,7 @@
           </li>
           <li class="faq-list__item">
             <div class="faq-list__container">
-              <input class="faq-list__checkbox" type="checkbox" name="question-4" id="question-4">
+              <input class="faq-list__checkbox" type="checkbox" name="question-4" id="question-4" data-test="toggle">
               <label for="question-4">Сколько тренеров работает в клубе и какова их&nbsp;квалификация?<span
                   class="faq-list__marker"></span></label>
               <div class=" faq-list__content">
@@ -597,7 +609,6 @@
         <h2 class="reviews__title title">Отзывы</h2>
 
         <div class="reviews-swiper">
-
           <button class="reviews-swiper__button reviews-swiper__button--prev" type="button"
             aria-label="Предыдущие отзывы."></button>
 
@@ -607,10 +618,11 @@
               <div class="reviews-card swiper-slide">
                 <div class="reviews-card__container">
                   <picture>
-                    <source type="image/webp" srcset="img/reviews/user-photo@1x.webp, img/reviews/user-photo@2x.webp 2x"
-                      width="68" height="68">
-                    <img src="img/reviews/user-photo@1x.jpg" srcset="img/reviews/user-photo@2x.jpg 2x" width="68"
-                      height="68" alt="Фото постоянного клиента.">
+                    <source type="image/webp"
+                      srcset="img/reviews/user-photo-1@1x.webp, img/reviews/user-photo-1@2x.webp 2x" width="68"
+                      height="68">
+                    <img src="img/reviews/user-photo-1@1x.jpg" srcset="img/reviews/user-photo-1@2x.jpg 2x" width="68"
+                      height="68" alt="Фото постоянного клиента." loading="lazy">
                   </picture>
                   <div>
                     <h3>Анна Орлова</h3>
@@ -625,17 +637,17 @@
               <div class="reviews-card swiper-slide">
                 <div class="reviews-card__container">
                   <picture>
-                    <source type="image/webp" srcset="img/reviews/user-photo@1x.webp, img/reviews/user-photo@2x.webp 2x"
-                      width="68" height="68">
-                    <img src="img/reviews/user-photo@1x.jpg" srcset="img/reviews/user-photo@2x.jpg 2x" width="68"
-                      height="68" alt="Фото постоянного клиента.">
+                    <source type="image/webp"
+                      srcset="img/reviews/user-photo-2@1x.webp, img/reviews/user-photo-2@2x.webp 2x" width="68"
+                      height="68">
+                    <img src="img/reviews/user-photo-2@1x.jpg" srcset="img/reviews/user-photo-2@2x.jpg 2x" width="68"
+                      height="68" alt="Фото постоянного клиента." loading="lazy">
                   </picture>
                   <div>
-                    <h3>Анна Орлова</h3>
-                    <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
-                      персонал
-                      дружелюбный.
-                      Зал&nbsp;просторный, даже в вечернее время нет&nbsp;очередей»</p>
+                    <h3>Кристина Смирнова</h3>
+                    <p>«Много лет посещаю данный зал. Отличные тренажёры, талантливые тренеры, есть детская комната.
+                      Часто проводят акции, цены
+                      доступные.»</p>
                   </div>
                 </div>
               </div>
@@ -643,10 +655,11 @@
               <div class="reviews-card swiper-slide">
                 <div class="reviews-card__container">
                   <picture>
-                    <source type="image/webp" srcset="img/reviews/user-photo@1x.webp, img/reviews/user-photo@2x.webp 2x"
-                      width="68" height="68">
-                    <img src="img/reviews/user-photo@1x.jpg" srcset="img/reviews/user-photo@2x.jpg 2x" width="68"
-                      height="68" alt="Фото постоянного клиента.">
+                    <source type="image/webp"
+                      srcset="img/reviews/user-photo-1@1x.webp, img/reviews/user-photo-1@2x.webp 2x" width="68"
+                      height="68">
+                    <img src="img/reviews/user-photo-1@1x.jpg" srcset="img/reviews/user-photo-1@2x.jpg 2x" width="68"
+                      height="68" alt="Фото постоянного клиента." loading="lazy">
                   </picture>
                   <div>
                     <h3>Анна Орлова</h3>
@@ -664,6 +677,7 @@
           <button class="reviews-swiper__button reviews-swiper__button--next" type="button"
             aria-label="Cледующие отзывы."></button>
         </div>
+
       </div>
     </section>
 
