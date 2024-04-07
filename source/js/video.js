@@ -25,8 +25,17 @@ const setupVideo = () => {
   videoContainer.append(createIframe());
 };
 
+const changTag = (element, nameTag) => {
+  const newTag = document.createElement(nameTag);
+
+  newTag.innerHTML = element.innerHTML;
+  newTag.className = element.className;
+  element.parentNode.replaceChild(newTag, element);
+};
+
 const initVideo = () => {
-  videoLink.removeAttribute('href');
+  changTag(videoLink, 'div');
+
   videoContainer.classList.add('video--enabled');
 
   videoContainer.addEventListener('click', setupVideo, { once: true });

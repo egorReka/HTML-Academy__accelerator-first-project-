@@ -66,7 +66,7 @@ const ASKED_QUESTIONS = {
     },
     {
       'question': 'Можно ли приводить с собой детей на тренировки?',
-      'answer': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'answer': 'Да, можно. В рамках комплексов прекрасные детские комнаты и тренеры со специальным образованием.',
     },
     {
       'question': 'Какие дополнительные правила посещения центра?',
