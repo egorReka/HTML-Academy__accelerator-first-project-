@@ -86,10 +86,12 @@
 
 .offers-hero__link {
   display: block;
+  max-width: 260px;
   margin: 0 auto;
 
   @include media-tablet {
     margin: 0 auto 0 -10px;
+    max-width: none;
   }
 
   @include media-desktop {
