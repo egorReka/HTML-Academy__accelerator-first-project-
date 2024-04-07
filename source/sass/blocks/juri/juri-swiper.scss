@@ -26,6 +26,10 @@
   }
 }
 
+.juri-swiper__list {
+  @include reset-list;
+}
+
 .juri-swiper__button {
   display: none;
 

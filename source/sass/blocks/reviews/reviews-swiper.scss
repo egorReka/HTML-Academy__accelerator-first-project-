@@ -28,6 +28,11 @@
   }
 }
 
+.reviews-swiper__list.swiper-wrapper {
+  @include reset-list;
+  align-items: stretch;
+}
+
 .reviews-swiper__button {
   display: none;
 
