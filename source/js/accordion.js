@@ -55,11 +55,11 @@ const changCategory = (evt) => {
   }
 };
 
-const initFaq = () => {
+const initAccordion = () => {
   window.addEventListener('scroll', updateStatusCheckboxes, { once: true });
 
   categoriesContainer.addEventListener('change', changCategory);
   faqList.addEventListener('change', updateStatusCheckboxes);
 };
 
-export { initFaq };
+export { initAccordion };
