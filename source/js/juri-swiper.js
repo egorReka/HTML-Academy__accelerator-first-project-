@@ -52,13 +52,14 @@ const initJuriSwiper = (Swiper, Navigation) => {
       },
     },
     on: {
-      afterInit: addFocusVisibleSlides(),
       transitionEnd: function () {
         this.updateSlidesClasses();
         updateFocusVisibleElements();
       }
     }
   });
+
+  addFocusVisibleSlides();
 
   return setSwiper.init();
 };
