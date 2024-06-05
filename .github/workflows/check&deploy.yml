@@ -1,0 +1,103 @@
+name: Project check and deploy
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: '*'
+  workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18.x'
+
+    - name: Cache modules
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: node-modules-${{ hashFiles('**/package-lock.json') }}
+
+    - uses: actions/checkout@master
+      name: Checkout
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run checks w3c
+      run: npm run w3c
+    - name: Run checks linthtml
+      run: npm run linthtml
+    - name: Run checks html-validate
+      run: npm run html-validate
+    - name: Run checks lint-bem
+      run: npm run lint-bem
+    - name: Run checks stylelint
+      run: npm run stylelint
+    - name: Run checks lint-js
+      run: npm run lint-js
+    - name: Run checks ls-lint
+      run: npm run ls-lint
+
+  deploy:
+    needs: check
+    name: Deploy
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          cache: 'npm'
+
+      - name: Cache modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: node-modules-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
