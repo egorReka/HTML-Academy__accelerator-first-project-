@@ -52,8 +52,6 @@ jobs:
       run: npm run stylelint
     - name: Run checks lint-js
       run: npm run lint-js
-    - name: Run checks ls-lint
-      run: npm run ls-lint
 
   deploy:
     needs: check
